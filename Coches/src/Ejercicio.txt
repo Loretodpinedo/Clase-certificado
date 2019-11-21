@@ -1,0 +1,22 @@
+Pequeño programa que trabaje con coches
+Queremos que nuestros coches almacenen la siguiente informacion
+	Matricula
+	Marca
+	Modelo
+	
+La aplicacion mostrará un menu con las sigueintes opciones
+	1- Alta coche
+	2- Listar Coches
+	0- Salir del programa
+	
+La opcion Alta coche nos preguntará por los datos de un coche
+(matricula, marca, modelo) y lo guardara en memoria (por ejemplo 
+un array list)
+La opcion listar coches nos mostrara todos los coches que llevamos
+dados de alta.
+La opcion 0 nos sacara del programa.
+El menu se mostrara todo el rato hasta que se pulse la opcion 0.
+
+Do while
+
+Ver ejercico Profe

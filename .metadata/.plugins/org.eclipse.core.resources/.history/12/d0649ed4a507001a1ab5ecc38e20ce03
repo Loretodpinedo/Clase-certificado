@@ -1,0 +1,68 @@
+package Colecciones;
+
+import java.util.ArrayList;
+
+public class Colecciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+    //Creacion array de String
+		ArrayList<String>listaNombres = new ArrayList<String>();
+		
+		//Añadimos nombres
+		listaNombres.add("Mortadelo");
+		listaNombres.add("Filemon");
+		listaNombres.add("Dr. Bacterio");
+		listaNombres.add("Ofelia");
+		listaNombres.add("Super intendente Vicente");
+		
+		//imprimir objetos del array
+		
+		System.out.println(listaNombres.get(0));//Mortadelo
+		System.out.println(listaNombres.get(3));//Ofelia
+		System.out.println(listaNombres.size());//Dice el numero de elementos son 5.
+		
+		
+		//Se recorren con FOR menos usada y peor. Se recorren las posiciones.
+		
+		for(int i = 0; i <listaNombres.size();i++) {
+			System.out.println(listaNombres.get(i));//Manera poco usada de recorrer arrays o listas
+			
+		}
+		
+		//Manera buena y mas usada de recorrer una array o lista. Se recorren los valores.
+		//for each
+		//hay que declarar una variable dentro del for del mismo tipo de la lista que queremos recorrer : 
+		//y lo siguiente 2ª parte la lista que queremos recorrer. 
+		
+		for(String valor : listaNombres) {
+			System.out.println(valor); //valor tiene el valor no la posicion.
+			
+			//Para crear un array de enteros debemos usar su correspondiente Wrapper o envoltorio.
+			//Todos lso primitivos tienen su propio wrapper
+			//Para int = integer donde int guarda el valor e integer la posicion en memoria.
+		//dos maneras de crear un objeto integer.
+			Integer entero = new Integer(4);
+			Integer entero2 = 5;//auto boxing
+			//para el resto de tipos de dato se pone el nombre del dato con la 1º letra mayuscula.
+			Double objetoDouble = 6.9;
+			double primitivoDouble = 6.9;
+			
+			ArrayList<Integer>listaEnteros = new ArrayList<>();
+			listaEnteros.add(1);//autoboxing
+			listaEnteros.add(45);//autoboxing
+			listaEnteros.add(new Integer(89));//asi se crea sin autoboxing.
+			
+			for (Integer v : listaEnteros) {
+				System.out.println(v);
+				
+			}
+			
+			
+			
+			
+			
+		}
+}
+}

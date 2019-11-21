@@ -1,0 +1,38 @@
+package ejercicios;
+import java.util.Scanner;
+
+public class Ejercicio03ChungosWord {
+
+	public static void main(String[] args) {
+		
+		Scanner leer = new Scanner (System.in);
+		
+		int  importe = 0, contador = 0, acumulador = 0, pago = 0, vuelta = 0;
+		
+		
+		
+		
+		System.out.println("El importe es ");
+		importe = leer.nextInt();
+		System.out.println("Importe para el pago");
+		pago = leer.nextInt();
+		System.out.println("la vuelta es "  + ( pago - importe));
+		
+		while (vuelta != 0)   {
+			
+			if (vuelta%50 != 0) {
+				contador ++;
+				vuelta = vuelta - 50;
+				
+			}
+			
+		}
+		
+		
+				
+		
+		
+
+	}
+
+}

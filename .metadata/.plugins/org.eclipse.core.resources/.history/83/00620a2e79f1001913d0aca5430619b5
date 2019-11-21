@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ejercicio04realWord {
+
+	public static void main(String[] args) {
+		// variable
+		String hombre = "", mujer = "";
+		
+		Scanner leer = new Scanner(System.in);		
+		System.out.println("Escribe H si eres hombre o M si eres mujer ");
+		
+		
+		hombre = leer.nextLine();
+		
+		if (hombre == "H") {
+				System.out.println("eres hombre ");
+		}
+		
+		}
+
+}

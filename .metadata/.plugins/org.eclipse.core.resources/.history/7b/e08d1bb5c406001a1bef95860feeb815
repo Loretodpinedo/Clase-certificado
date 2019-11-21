@@ -1,0 +1,31 @@
+package Main;
+
+import bean.Persona;
+
+public class MainPersona {
+	
+	public static void main(String[] args) {
+		
+		//Creacion objeto con el constructor vacio.
+		
+		Persona p1 = new Persona ();
+		Persona pAux = p1;
+		p1.setNombre("Bud Espencer");
+		p1.setEdad(89);
+		p1.setPeso(120);
+		
+		//Creacion objeto 2º manera con el constructor con campos.
+		
+		Persona p2 = new Persona("Terence Hill", 67, 70);
+		
+		pAux.setEdad(33);//Con esto la edad de p1 y pAux cambia a 33. 
+		System.out.println(p1.getEdad());
+		cambiarEdad(p1);//aounta al nuevo metodo.
+		
+	}
+	
+	public static void cambiarEdad(Persona p) {
+		p.setEdad(45);
+	}
+
+}

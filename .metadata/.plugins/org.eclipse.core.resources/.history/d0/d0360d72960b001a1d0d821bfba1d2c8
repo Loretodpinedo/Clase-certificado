@@ -1,0 +1,33 @@
+package modelo.entidad;
+
+import java.util.ArrayList;
+
+public class Libreria {
+	
+	private String nombreLibreria;
+	private ArrayList<Libreria> favoritos;
+	
+	
+	public String getNombreLibreria() {
+		return nombreLibreria;
+	}
+	public void setNombreLibreria(String nombreLibreria) {
+		this.nombreLibreria = nombreLibreria;
+	}
+	public ArrayList<Libreria> getFavoritos() {
+		return favoritos;
+	}
+	public void setFavoritos(ArrayList<Libreria> favoritos) {
+		this.favoritos = favoritos;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

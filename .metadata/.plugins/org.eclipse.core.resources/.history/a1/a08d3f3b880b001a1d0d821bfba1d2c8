@@ -1,0 +1,18 @@
+package modelo.negocio;
+
+import modelo.entidad.Libros;
+
+public class GestorLibros {
+	
+	
+	
+	private static Libros altaLibros() {
+		
+		
+		
+		return null;
+	}
+	
+	
+
+}

@@ -1,0 +1,34 @@
+package modelo.negocio;
+
+import modelo.entidad.Libreria;
+import modelo.entidad.Libro;
+import java.util.ArrayList;
+
+public class GestorLibros {
+
+	private Libreria favoritos;
+
+	public Libreria getfavoritos() {
+		return favoritos;
+	}
+
+	public void setfavoritos(Libreria favoritos) {
+		favoritos = favoritos;
+	}
+	
+	
+
+	public boolean alta(Libro l) {
+		
+	if (l.getTitulo().length() == 0) {
+		return false;
+	}
+	if (l.getIsbn().length() == 0) {
+		
+	return false;
+	
+	}
+	}
+
+	}
+

@@ -1,0 +1,15 @@
+package Coches;
+
+import java.util.ArrayList;
+
+public class AplicacionCoches {
+
+	public static void main(String[] args) {
+		
+	ArrayList<Coche>listaCoches = new ArrayList<Coche>();
+	
+	
+
+	}
+
+}

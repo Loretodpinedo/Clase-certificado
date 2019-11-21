@@ -1,0 +1,14 @@
+package modelo.negocio;
+
+public class GestorLibros {
+	
+	private static String mostrarMenu();
+	
+	private static Libros altaLibros() {
+		
+		return null;
+	}
+	
+	
+
+}

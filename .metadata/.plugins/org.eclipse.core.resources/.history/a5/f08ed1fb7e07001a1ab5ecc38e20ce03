@@ -1,0 +1,17 @@
+package main;
+
+import bean.Persona;
+
+public class CasaLore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Persona propietario = new Persona ();
+		propietario.setDireccion("Lucero");
+		propietario.setEdad("43");
+		propietario.setNombre("Loreto");
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package modelo.negocio;
+
+import modelo.entidad.Libreria;
+import modelo.entidad.Libro;
+import java.util.ArrayList;
+
+public class GestorLibros {
+	public static void main(String[] args) {
+		
+	
+	
+	static ArrayList<Libreria> Favoritos;
+	
+	/**
+	 * Metodo que da de alta un libro.
+	 * 
+	 */
+	
+	public boolean Libro altaLibros() {
+		
+		
+		
+		Favoritos.add(libro);
+		
+	
+		
+		return null;
+	}
+	
+	}
+
+}
