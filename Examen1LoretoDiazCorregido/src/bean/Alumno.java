@@ -6,13 +6,13 @@ public class Alumno {
 
 	private String dni = "", nombreCompleto = "", sexo = "";
 	private int edad = 0;
-	private Certificado certificado;
-	
+
+
 	// Genero el metodo ToString para poder mostrar la informacion.
 	@Override
 	public String toString() {
 		return "El alumno con DNI " + dni + ", con nombre y apellidos " + nombreCompleto + ", de sexo " + sexo
-				+ ", cuya edad es " + edad + " años" + ", esta cursando el certificado " + certificado.getNombreCurso();
+				+ ", cuya edad es " + edad + " años" + ", esta cursando el certificado " ;
 	}
 
 	// Genero el constructor por defecto, sin ningun campo para dar valor a los
@@ -28,8 +28,8 @@ public class Alumno {
 		this.nombreCompleto = nombreCompleto;
 		this.sexo = sexo;
 		this.edad = edad;
-		this.certificado = certificado;
 	}
+		
 
 	// Genero los getter and setter para poder acceder a las variables, ya que las
 	// he declarado como privadas
@@ -66,12 +66,6 @@ public class Alumno {
 		this.edad = edad;
 	}
 
-	public Certificado getCertificado() {
-		return certificado;
-	}
-
-	public void setProfesor(Certificado certificado) {
-		this.certificado = certificado;
-	}
+	
 
 }
