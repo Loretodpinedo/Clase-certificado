@@ -21,7 +21,7 @@
 		<item key="size.y" value="252"/>
 	</section>
 	<section name="quick_assist_proposal_size">
-		<item key="size.x" value="408"/>
+		<item key="size.x" value="526"/>
 		<item key="size.y" value="251"/>
 	</section>
 	<section name="RefactoringWizard.preview">
