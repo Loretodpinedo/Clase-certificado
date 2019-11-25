@@ -21,11 +21,14 @@
 <fullyQualifiedTypeName name="Clases.Director"/>
 <fullyQualifiedTypeName name="Clases.Pelicula"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="modelo.entidad.Libros"/>
 <fullyQualifiedTypeName name="modelo.negocio.GestorLibros"/>
 <fullyQualifiedTypeName name="modelo.entidad.Libro"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="modelo.entidad.Libreria"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="bean.Certificado"/>
+<fullyQualifiedTypeName name="bean.Profesor"/>
+<fullyQualifiedTypeName name="bean.Alumno"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
