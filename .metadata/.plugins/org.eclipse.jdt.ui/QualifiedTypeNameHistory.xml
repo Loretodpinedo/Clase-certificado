@@ -31,4 +31,6 @@
 <fullyQualifiedTypeName name="bean.Profesor"/>
 <fullyQualifiedTypeName name="bean.Alumno"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="entidad.Persona"/>
+<fullyQualifiedTypeName name="entidad.Placton"/>
 </qualifiedTypeNameHistroy>

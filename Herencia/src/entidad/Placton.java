@@ -1,18 +1,13 @@
 package entidad;
 
 public class Placton {
-	
+
 	private int calorias = 0;
-	
-	
-	
 
 	@Override
 	public String toString() {
-		return "Placton [calorias=" + calorias + "]";
+		return "El placton tiene " + calorias + " calorias";
 	}
-	
-	
 
 	public int getCalorias() {
 		return calorias;
@@ -21,6 +16,5 @@ public class Placton {
 	public void setCalorias(int calorias) {
 		this.calorias = calorias;
 	}
-	
-	
+
 }
