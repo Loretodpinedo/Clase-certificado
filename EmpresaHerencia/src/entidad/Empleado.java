@@ -7,6 +7,16 @@ public abstract class Empleado {
 	private double salarioBase = 0.0;
 
 	public abstract double salarioTotal();
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return "Empleado con nombre " + nombre + ", DNI " + dni + ", edad" + edad + ", salarioBase" + salarioBase +"€.\n";
+	}
+
+
 
 	public String getDni() {
 		return dni;

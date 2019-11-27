@@ -12,6 +12,8 @@ public class MainEmpleado {
 	public static void main(String[] args) {
 
 		ArrayList<Empleado> listaEmpleados = new ArrayList<Empleado>();
+		
+	
 
 		Director director = new Director();
 		director.setNombre("Maria Cristina");
