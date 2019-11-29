@@ -72,7 +72,8 @@ public class vista {
 				+ "3- Calculo salarios \n" + "0- Salir \n");
 
 		opcion = sc.nextLine();
-
+		
+		do {
 		switch (opcion) {
 
 		case "1":
@@ -97,10 +98,20 @@ public class vista {
 				} else if (opcion.equals("3")) {
 
 					Empleado d = altaDirector();
-
-					System.out.println("¿Que empleados forman parte de tu equipo?");
-					System.out.println(listaEmpleado);
+					
 					listaEmpleado.add(d);
+					System.out.println("¿EScribe el nombre de los empleados forman parte de tu equipo?");
+					System.out.println(listaEmpleado);
+					//String empdir = "";
+					//empdir = sc.nextLine();
+					for (Empleado empdir : listaEmpleado) {
+						if (empdir.equals(empdir.getNombre())) {
+							listaEmpDir.add(empdir);
+							
+							System.out.println(listaEmpDir);
+						}
+					}
+					
 				}					
 				System.out.println("1- prog 2- jefepro 3- dir 0- salir");
 				opcion = sc.nextLine();
@@ -127,6 +138,8 @@ public class vista {
 			default:
 				System.out.println("La opcion no es correcta marque de nuevo");
 		}
+		}while (!opcion.equals("0"));
+		//opcion = sc.nextLine();
 
 	}
 

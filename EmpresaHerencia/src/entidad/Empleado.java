@@ -13,7 +13,7 @@ public abstract class Empleado {
 
 	@Override
 	public String toString() {
-		return "Empleado con nombre " + nombre + ", DNI " + dni + ", edad" + edad + ", salarioBase" + salarioBase +"€.\n";
+		return "Empleado con nombre " + nombre + ", DNI " + dni + ", edad " + edad + ", salarioBase " + salarioBase +"€.\n";
 	}
 
 

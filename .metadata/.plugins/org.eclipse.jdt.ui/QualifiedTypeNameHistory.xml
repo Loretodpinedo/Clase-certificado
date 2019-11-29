@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="beans.Gato"/>
 <fullyQualifiedTypeName name="beans.Departamento"/>
 <fullyQualifiedTypeName name="beans.Empleado"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="bean.Persona"/>
 <fullyQualifiedTypeName name="bean.Habitacion"/>
 <fullyQualifiedTypeName name="bean.Direccion"/>
@@ -25,8 +24,6 @@
 <fullyQualifiedTypeName name="modelo.negocio.GestorLibros"/>
 <fullyQualifiedTypeName name="modelo.entidad.Libro"/>
 <fullyQualifiedTypeName name="modelo.entidad.Libreria"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="bean.Certificado"/>
 <fullyQualifiedTypeName name="bean.Profesor"/>
 <fullyQualifiedTypeName name="bean.Alumno"/>
@@ -39,10 +36,19 @@
 <fullyQualifiedTypeName name="entidad.Placton"/>
 <fullyQualifiedTypeName name="entidad.Oso"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="entidad.Programador"/>
 <fullyQualifiedTypeName name="entidad.Director"/>
 <fullyQualifiedTypeName name="java.nio.file.DirectoryStream"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="entidad.Programador"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="entidad.JefeProyecto"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="entidad.Empleado"/>
-<fullyQualifiedTypeName name="entidad.JefeProyecto"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Negocio.GestorCalculadora"/>
+<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>
