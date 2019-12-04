@@ -10,7 +10,7 @@ public class Coche {
 	
 	@Override
 	public String toString() {
-		return "La ID del coche es " + id + ", la matricula es " + matricula + ", la marca es" + marca + ", el modelo es" + modelo;
+		return "La ID del coche es " + id + ", la matricula es " + matricula + ", la marca es " + marca + ", el modelo es " + modelo;
 	}
 	
 	
