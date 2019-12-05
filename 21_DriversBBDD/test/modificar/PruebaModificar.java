@@ -10,7 +10,7 @@ public class PruebaModificar {
 		DaoCoche daocoche = new DaoCoche();
 
 		Coche c1 = new Coche();
-		c1.setId(1);
+		c1.setId(2);
 		c1.setMatricula("modificado");
 		c1.setMarca("modif");
 		c1.setModelo("Super modif");

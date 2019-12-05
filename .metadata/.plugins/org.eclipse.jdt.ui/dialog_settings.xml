@@ -18,7 +18,7 @@
 	</section>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="657"/>
-		<item key="size.y" value="252"/>
+		<item key="size.y" value="183"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 		<item key="size.x" value="526"/>
@@ -37,7 +37,7 @@
 		<item key="patterns" value="*"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="0"/>
+		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item key="LimitElements" value="false"/>
