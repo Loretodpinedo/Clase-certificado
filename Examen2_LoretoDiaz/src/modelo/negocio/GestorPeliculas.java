@@ -26,6 +26,7 @@ public class GestorPeliculas {
 			return false;
 		}
 		
+		
 		//Hacer el resto de metodos con la variable dp.
 
 		List<Pelicula> listaPeliculas = dp.listar();
@@ -50,6 +51,12 @@ public class GestorPeliculas {
 		this.dp = dp;
 	}
 	
+	//desde aqui estoy haciendo
+	 public boolean borrar(Pelicula p) {
+		 dp.borrar(p);
+		 return true;
+		 
+	 }
 	
 
 }

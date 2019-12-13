@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package modelo.persistencia;
 
 import java.sql.Connection;
@@ -13,10 +11,7 @@ import java.util.List;
 import java.util.TimeZone;
 import modelo.entidad.Pelicula;
 
-/**
- * @author aula2m
- *
- */
+
 public class DaoPelicula {
 	
 	private Connection conexion;
