@@ -2,61 +2,99 @@ package modelo.negocio;
 
 import java.util.List;
 
+
 import modelo.entidad.Pelicula;
 import modelo.persistencia.DaoPelicula;
 
 public class GestorPeliculas {
 
-	DaoPelicula dp = new DaoPelicula();
-	private Pelicula pelicula;
+	private DaoPelicula daoPelicula;
+	
+	
 
-	public boolean alta(Pelicula p) {
+	public DaoPelicula getDaoPelicula() {
+		return daoPelicula;
+	}
 
-		if (p.getTitulo().length() == 0) {
-			return false;
-		}
-		if (p.getDirector().length() == 0) {
+	public void setDaoPelicula(DaoPelicula daoPelicula) {
+		this.daoPelicula = daoPelicula;
+	}
 
-			return false;
+	/**
+	 * Metodo que se encarga de dar de alta una pelicula
+	 * @param pelicula la pelicula que quieres dar de alta
+	 * @return 0 si se ha insertado, 1 si algun campo esta vacio,
+	 * 2 si hay dos peliculas con elmismo tipo, 
+	 * 3 en caso de algun error con la bbdd
+	 */
+	public int alta(Pelicula pelicula) {
+		//comprobacion de que todos los campos estan llenos
+		boolean correcto = comprobarCamposVAcios(pelicula);
+		if(!correcto) {
+			return 1;
 		}
-		if (p.getGenero().length() == 0) {
-			return false;
+		//comprobamos que no ha titulos repetidos en la bdd
+		boolean repetido = comprobarTituloRepetido(pelicula.getTitulo());
+		if (repetido) {
+			return 2;
 		}
-		if (p.getAñoPublicacion().length() == 0) {
-			return false;
+		correcto = daoPelicula.alta(pelicula);
+		if (correcto) {
+		return 0;
+		}else {
+			return 3;
 		}
 		
+
 		
-		//Hacer el resto de metodos con la variable dp.
 
-		List<Pelicula> listaPeliculas = dp.listar();
+		
 
-		for (Pelicula peli : listaPeliculas) {
+	}
 
-			if (peli.getTitulo().equals(p.getTitulo())) {
+	/**
+	 * Metodo que se encarga de comprobar si un campo de la pelicula esta vacio
+	 * 
+	 * @param pelicula la pelicula que queremos comprobar
+	 * @return false en caso de que algun caompo este vacio, true en caso que que
+	 *         esten todos los campos rellenos
+	 */
 
-				return false;
-			}
+	private boolean comprobarCamposVAcios(Pelicula pelicula) {
+		// comprobacion de que todos los campos estan llenos
+		if (pelicula.getTitulo().isEmpty()) {
+			return false;
+		} else if (pelicula.getDirector().isEmpty()) {
+			return false;
+		} else if (pelicula.getGenero().isEmpty()) {
+			return false;
+		} else if (pelicula.getAñoPublicacion().isEmpty()) {
+			return false;
 		}
-		dp.listar().add(p);
 		return true;
 
+		// Tambien se puede hacer asi
+		/*
+		 * if (p.getTitulo().length() == 0) { return false; } if
+		 * (p.getDirector().length() == 0) {
+		 * 
+		 * return false; } if (p.getGenero().length() == 0) { return false; } if
+		 * (p.getAñoPublicacion().length() == 0) { return false; }
+		 */
 	}
-
-	public DaoPelicula getDp() {
-		return dp;
-	}
-
-	public void setDp(DaoPelicula dp) {
-		this.dp = dp;
-	}
+	/**
+	 * Metodo que comprueba si el titulo esta repetido en la bbdd
+	 * @param titulo el titulo que queremos comprobar
+	 * @return <b>false</b> en caso de que el titulo no exista, 
+	 * <b>true</b> en caso de que si exista. 
+	 */
 	
-	//desde aqui estoy haciendo
-	 public boolean borrar(Pelicula p) {
-		 dp.borrar(p);
-		 return true;
-		 
-	 }
-	
-
+	private boolean comprobarTituloRepetido(String Titulo) {
+		for(Pelicula p : daoPelicula.listar()) {
+			if(p.getTitulo().equals(Titulo)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
