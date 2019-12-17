@@ -11,10 +11,10 @@ public class AltaTest {
 	
 
 		Pelicula p1 = new Pelicula();
-		p1.setTitulo("Examen de diez");
-		p1.setDirector("Loreto Diaz");
-		p1.setGenero("Realidad maravillosa");
-		p1.setAñoPublicacion("2019");
+		p1.setTitulo("Otra cosa mariposa");
+		p1.setDirector("Lola Rey");
+		p1.setGenero("ficcion");
+		p1.setAñoPublicacion("1976");
 
 		boolean altapelicula = daopelicula.alta(p1);
 

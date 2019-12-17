@@ -17,7 +17,7 @@ public class ListadoPeliculasTest {
 
 		List<Pelicula> listapeliculas = daopelicula.listar();
 
-		System.out.println("Los coches disponibles son  " + listapeliculas);
+		System.out.println("Las peliculas disponibles son  " + listapeliculas);
 
 		
 

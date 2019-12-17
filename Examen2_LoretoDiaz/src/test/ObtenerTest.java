@@ -11,7 +11,7 @@ public class ObtenerTest {
 
 		
 
-		Pelicula obtenerPelicula = daopelicula.obtener(4);
+		Pelicula obtenerPelicula = daopelicula.obtener(1);
 
 		System.out.println("La pelicula seleccionada es " + obtenerPelicula);
 

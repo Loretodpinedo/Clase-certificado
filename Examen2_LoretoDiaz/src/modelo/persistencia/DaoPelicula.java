@@ -113,7 +113,7 @@ public class DaoPelicula {
 		}
 	}
 	
-	public boolean borrar(Pelicula pelicula) {
+	public boolean borrar(int id) {
 		if (!abrirConexion()) {
 			return false;
 		}
@@ -123,7 +123,7 @@ public class DaoPelicula {
 
 			PreparedStatement ps = conexion.prepareStatement(query);
 
-			ps.setInt(1, pelicula.getId());
+			ps.setInt(1, id);
 
 			int numeroFilas = ps.executeUpdate();
 			if (numeroFilas == 0) {

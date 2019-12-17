@@ -10,10 +10,11 @@ public class ModificarTest {
 		DaoPelicula daopelicula = new DaoPelicula();
 
 		Pelicula p1 = new Pelicula();
-		p1.setId(2);
+		p1.setId(3);
 		p1.setTitulo("Pelicula que he cambiado");
-		p1.setDirector("Loreto Pinedo");
+		p1.setDirector("Javier Serrano");
 		p1.setAñoPublicacion("2019");
+		p1.setGenero("Felicidad");
 
 		boolean modificarPelicula = daopelicula.modificar(p1);
 
