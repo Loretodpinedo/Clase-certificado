@@ -12,12 +12,12 @@ public class DamePedido {
 			
 			}
 		
-		public static Pedido [] damePedidos [] {
+		public static Pedido [] damePedidos; {
 			Pedido [] pedidos = {
 					
 				new Pedido(2, "aceite de coco", 5, true, Cliente.dameCliente()),
 				new Pedido(3, "Tegobetaina de coco", 6.9, true, Cliente.dameCliente()),
-				new Pedido(idPedido, descripcion, importe, conIva, cliente)
+				//new Pedido(idPedido, descripcion, importe, conIva, cliente)
 				
 			
 			};
