@@ -12,6 +12,8 @@ import java.util.ArrayList;
 public class ServidorCoche {
 
 	public static void main(String[] args) {
+		
+		ArrayList<Coche> listaCoches = new ArrayList<Coche>();
 
 		ServerSocket ss = null;
 		try {
@@ -33,7 +35,7 @@ public class ServidorCoche {
 				// para leer por frases, podemos usar la siguiente clase
 				BufferedReader bf = new BufferedReader(isr);
 				String cadena = bf.readLine();
-				System.out.println("Ha llegado lo siguiente al servidor: " + cadena);
+				//System.out.println("Ha llegado lo siguiente al servidor: " + cadena);
 				String[] coches = cadena.split("-");
 				String id = coches[0];
 				String matricula = coches[1];
@@ -48,7 +50,7 @@ public class ServidorCoche {
 				c1.setMarca(marca);
 				c1.setModelo(modelo);
 				
-				ArrayList<Coche> listaCoches = new ArrayList<Coche>();
+				
 				
 				listaCoches.add(c1);
 				
