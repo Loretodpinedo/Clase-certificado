@@ -4,24 +4,14 @@ import java.util.List;
 
 public class Coche {
 
-	private String id = "", matricula = "", modelo = "", marca = "";
+	private String matricula = "", modelo = "", marca = "";
 	
 	
-	
-
 	@Override
 	public String toString() {
-		return "La id del coche es " + id + ", la matricula " + matricula + ", el modelo " + modelo + " y la  marca " + marca;
+		return "La matricula es " + matricula + ", el modelo " + modelo + " y la  marca " + marca + "\n";
 	}
 	
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
 
 	public String getMatricula() {
 		return matricula;
