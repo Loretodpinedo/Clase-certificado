@@ -1,6 +1,8 @@
 package cliente;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -12,10 +14,10 @@ public class ClienteSuma {
 
 		Scanner sc = new Scanner(System.in);// system.in es un stream de entrada.
 
-		//System.out.println("¿Que numero quieres sumar?");
-		//int numero1 = sc.nextInt();
-		//System.out.println("¿Con que numero lo quieres sumar?");
-		//int numero2 = sc.nextInt();
+		System.out.println("¿Que numero quieres sumar?");
+		int numero1 = sc.nextInt();
+		System.out.println("¿Con que numero lo quieres sumar?");
+		int numero2 = sc.nextInt();
 
 		// nos conectamos al servidor para mandarle
 		// los numeros
@@ -31,9 +33,16 @@ public class ClienteSuma {
 			// el metodo getOutStream
 			
 
-			ps.println("Hola mundo");
-
-		} catch (UnknownHostException e) {
+			ps.println(numero1 + "-" + numero2);
+			
+			//para leer la info del servidor			
+			InputStreamReader isr = new InputStreamReader(socket.getInputStream());
+			//para leer por frases
+			BufferedReader bf = new BufferedReader(isr);
+			//en esta linea se queda parado hasta que el servidor responda
+			System.out.println("Cliente: " + bf.readLine());
+			
+			} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
