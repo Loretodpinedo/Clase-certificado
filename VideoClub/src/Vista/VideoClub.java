@@ -47,12 +47,20 @@ public class VideoClub {
 		String genero = "";
 		System.out.println("Genero de la pelicula");
 		genero = sc.nextLine();
-		if (genero.contentEquals(genero)) {
+		//if (genero.contentEquals(genero)) {
+		
+		for (Pelicula p : videoClub) {
+			if (genero.contentEquals(genero)){
+				System.out.println(p);
+			}
+		}
+			
+			System.out.println();
 			
 		}
 			
 		
-	}
+	//}
 
 
 
