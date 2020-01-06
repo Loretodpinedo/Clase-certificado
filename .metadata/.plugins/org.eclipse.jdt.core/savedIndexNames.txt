@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\aula2m\Desktop\Loreto\Clase-certificado\.metadata\.plugins\org.eclipse.jdt.core
 3253420475.index
 2599689245.index
@@ -9,3 +10,38 @@ INDEX VERSION 1.131+C:\Users\aula2m\Desktop\Loreto\Clase-certificado\.metadata\.
 1432795634.index
 2972773729.index
 2198550555.index
+=======
+INDEX VERSION 1.131+C:\Users\javie\Desktop\Programacion de sistemas\Clase-certificado\.metadata\.plugins\org.eclipse.jdt.core
+903352913.index
+1515064788.index
+1347130369.index
+1432795634.index
+2022856654.index
+1333903546.index
+1149658856.index
+2122104694.index
+2642897766.index
+22699913.index
+2400158756.index
+1350174468.index
+2631932185.index
+3461700014.index
+3303606114.index
+2389797603.index
+1097860004.index
+1876361744.index
+2370522639.index
+3072534977.index
+2070679043.index
+2972773729.index
+2975945405.index
+3208809485.index
+1497578568.index
+2419293401.index
+2599689245.index
+2339689231.index
+1373018196.index
+1591983124.index
+192977629.index
+471371613.index
+>>>>>>> 12986907cd280f37a89a3d7c2d95de20b54ae4d0

@@ -18,7 +18,7 @@ public class ServidorCoche {
 		ServerSocket ss = null;
 		try {
 			ss = new ServerSocket(2019);
-			System.out.println("Server escuchando por el puerto 2019");
+			//System.out.println("Server escuchando por el puerto 2019");
 		} catch (IOException e1) {
 			
 			e1.printStackTrace();
@@ -27,7 +27,7 @@ public class ServidorCoche {
 
 		
 		while (true) {
-			System.out.println("Escuchando peticiones...");
+			//System.out.println("Escuchando peticiones...");
 			try (Socket socket = ss.accept();) {
 				
 				InputStreamReader isr = new InputStreamReader(socket.getInputStream());

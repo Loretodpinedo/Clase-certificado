@@ -10,14 +10,19 @@
 <fullyQualifiedTypeName name="Hilos.PrimoThread"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="Servidor.ServidorCalculadora"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+=======
+>>>>>>> 12986907cd280f37a89a3d7c2d95de20b54ae4d0
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="java.io.PrintStream"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.io.PrintStream"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="Servidor.Entidad.Coche"/>
@@ -26,4 +31,10 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="Servidor.Pelicula"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+=======
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="Servidor.DaoCoche"/>
+>>>>>>> 12986907cd280f37a89a3d7c2d95de20b54ae4d0
 </qualifiedTypeNameHistroy>

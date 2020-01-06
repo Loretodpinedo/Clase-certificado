@@ -94,6 +94,7 @@
 		<item key="DIALOG_HEIGHT" value="678"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
+<<<<<<< HEAD
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item key="DIALOG_X_ORIGIN" value="318"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
@@ -107,5 +108,9 @@
 		<item key="DIALOG_WIDTH" value="516"/>
 		<item key="DIALOG_HEIGHT" value="594"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+=======
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
+>>>>>>> 12986907cd280f37a89a3d7c2d95de20b54ae4d0
 	</section>
 </section>
