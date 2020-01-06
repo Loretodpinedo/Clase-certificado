@@ -17,7 +17,7 @@ import modelo.entidad.Coche;
  * acronimo de DATA ACCES OBJET y es un objeto que suele encargarse de
  * interactuar los objetos coche con la base de datos.
  * 
- * Nosotros vamos a desarrolar este DAO mediante el API de java JDBC (java data
+ * Nosotros vamos a desarrollar este DAO mediante el API de java JDBC (java data
  * base conection), un API es un conjunto de librerias que proporcionan una
  * funcionalidad, y en este caso nos daran la funcionalidad para conectaronos a
  * una base de datoss. Hay otras APIs para acceso a datos como por ejemplo JPA
@@ -25,8 +25,8 @@ import modelo.entidad.Coche;
  * 
  * para usar JDBC O JPA, necesitamos los drivers de conexion que ha hecho el
  * proveedor de nuesta base de datos, en nuestro caso MYSQL, dependiendo de la
- * base de datos a la que nos conectemos, necesitaremos uns drivers u otros. por
- * ejemplo Oracle, Postgres, SQLite, etc.
+ * base de datos a la que nos conectemos, necesitaremos unos drivers u otros.
+ * Por ejemplo Oracle, Postgres, SQLite, etc.
  * 
  * Asi pues lo primero que tenemos que hacer es obtener los drivers e incluirlos
  * en nuestro proyecto. En nuestro caso necesitamos los drivers de Mysql 8.0,
@@ -119,7 +119,7 @@ public class DaoCoche {
 
 		try {
 			PreparedStatement ps = conexion.prepareStatement(query);
-			// sustituimos la primera interrogante pro la matricula del coche.
+			// sustituimos la primera interrogante por la matricula del coche.
 			ps.setString(1, coche.getMatricula());
 			ps.setString(2, coche.getMarca());
 			ps.setString(3, coche.getModelo());
@@ -218,7 +218,7 @@ public class DaoCoche {
 			ps.setInt(1, id);
 
 			ResultSet rs = ps.executeQuery();
-			// ResultSet es un objeto que tiene toda la lista de registros queha devuelto
+			// ResultSet es un objeto que tiene toda la lista de registros que ha devuelto
 			// la consulta
 
 			Coche coche = null;

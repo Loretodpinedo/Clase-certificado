@@ -27,7 +27,7 @@ public class MainExcepciones {
 				// programa se para.
 
 				int resultado = num1 / num2;
-				// Rn caso de excepcion deja de ejecutar el bloque try.
+				// En caso de excepcion deja de ejecutar el bloque try.
 
 				System.out.println("El resultado es " + resultado);
 

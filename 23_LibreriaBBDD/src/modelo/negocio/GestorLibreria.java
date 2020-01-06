@@ -13,8 +13,8 @@ public class GestorLibreria {
 	private DaoLibreria daoLibreria;
 
 	//Como no quiero que se me olvide poner la libreria
-	//y ademas este gestor no funciona sin la libraria
-	//creo INICAMENTE el constructor con la libreria
+	//y ademas este gestor no funciona sin la libreria
+	//creo INICIALMENTE el constructor con la libreria
 	//y quito set
 	public GestorLibreria(DaoLibreria daoLibreria) {
 		super();

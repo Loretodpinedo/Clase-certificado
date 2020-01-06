@@ -44,11 +44,10 @@ public class DaoCoche {
 			return false;
 		}
 
-<<<<<<< HEAD
+ 
 		String query = "insert into coches (marca,modelo,matricula) values (?,?,?)";
-=======
-		String query = "insert into coches (marca,modelo,matricula) values (?,?,?,?)";
->>>>>>> 12986907cd280f37a89a3d7c2d95de20b54ae4d0
+
+		
 
 		try {
 			PreparedStatement ps = conexion.prepareStatement(query);
