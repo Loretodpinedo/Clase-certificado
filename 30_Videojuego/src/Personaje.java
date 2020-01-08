@@ -1,21 +1,24 @@
 
 public abstract class Personaje {
 
-	private String tipo;
+	
 	private String nombre;
 	private Arma arma;
+	private int vida;
+	
+	public abstract void atacar();
+	
+	//con este metodo puedo atacar a otro personaje
+	public abstract void atacarPersonaje(Personaje p);
 
-	public void atacar() {
-
+	public int getVida() {
+		return vida;
 	}
 
-	public String getTipo() {
-		return tipo;
+	public void setVida(int vida) {
+		this.vida = vida;
 	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
+	
 
 	public String getNombre() {
 		return nombre;

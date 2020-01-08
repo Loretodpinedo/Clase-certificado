@@ -9,6 +9,7 @@ public class MainVideojuego {
 		String tipo = null;
 		String nombre = null;
 
+	
 		System.out.println("¿De que tipo es tu personaje?");
 		tipo = sc.nextLine();
 		Personaje person = FabricaPersonajes.crear(tipo);
@@ -19,11 +20,13 @@ public class MainVideojuego {
 
 		Arma arma = FabricaArmas.crear(sc.nextLine());
 		person.setArma(arma);
-
-		// System.out.println("Tu personaje se llama " + nombre + " es de tipo " +
-		// tipo);
+		
+		/*System.out.println("En que equipo esta tu personaje ");
+		Equipo equipo = FabricaEquipos
+		*/
 
 		person.atacar();
+     
 
 		sc.close();
 	}

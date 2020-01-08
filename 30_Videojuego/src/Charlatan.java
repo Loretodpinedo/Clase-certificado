@@ -6,4 +6,10 @@ public class Charlatan extends Personaje {
 		getArma().usar();
 	}
 
+	@Override
+	public void atacarPersonaje(Personaje p) {
+		
+		
+	}
+
 }

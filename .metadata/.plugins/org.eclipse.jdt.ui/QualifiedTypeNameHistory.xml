@@ -6,11 +6,16 @@
 <fullyQualifiedTypeName name="Espada"/>
 <fullyQualifiedTypeName name="Charlatan"/>
 <fullyQualifiedTypeName name="Guerrero"/>
+<fullyQualifiedTypeName name="java.awt.peer.ScrollbarPeer"/>
+<fullyQualifiedTypeName name="FabricaArmas"/>
+<fullyQualifiedTypeName name="Arma"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="FabricaEquipos"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="FabricaPersonajes"/>
+<fullyQualifiedTypeName name="Enano"/>
 <fullyQualifiedTypeName name="CharlaInterminable"/>
 <fullyQualifiedTypeName name="Personaje"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.awt.peer.ScrollbarPeer"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="FabricaPersonajes"/>
-<fullyQualifiedTypeName name="FabricaArmas"/>
 </qualifiedTypeNameHistroy>

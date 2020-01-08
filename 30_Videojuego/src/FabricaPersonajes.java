@@ -11,6 +11,7 @@ public class FabricaPersonajes {
 			personaje = new Charlatan();
 			personaje.getNombre();
 			personaje.getArma();
+			personaje.setVida(20);
 
 			break;
 
@@ -18,6 +19,24 @@ public class FabricaPersonajes {
 			personaje = new Guerrero();
 			personaje.getNombre();
 			personaje.getArma();
+			personaje.setVida(10);
+
+			break;
+
+		case "Mago":
+			personaje = new Mago();
+			personaje.getNombre();
+			personaje.getArma();
+			personaje.setVida(15);
+
+			break;
+
+		case "Enano":
+			personaje = new Enano();
+			personaje.getNombre();
+			personaje.getArma();
+			personaje.setVida(19);
+
 			break;
 
 		default:
