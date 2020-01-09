@@ -10,4 +10,10 @@ public class Mago extends Personaje{
 		
 	}
 
+	@Override
+	public void atacarPersonaje(Personaje p) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

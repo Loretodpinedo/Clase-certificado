@@ -6,4 +6,10 @@ public class Guerrero extends Personaje {
 		getArma().usar();
 	}
 
+	@Override
+	public void atacarPersonaje(Personaje p) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
