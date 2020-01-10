@@ -29,6 +29,27 @@ public class MainSpring {
 		// hayas creado. En este caso tipo Persona.
 		Persona p1 = (Persona) context.getBean("persona1");
 
+		Persona p2 = new Persona();
+		// Diferencias entre uno y otro
+		// aqui no puerdo el objeto por me lo gestiona spring
+		// IoC
+		p1 = null;
+		// aqui pierdo el objeto porque lo gestiono yo
+		p2 = null;
+
+		p1 = (Persona) context.getBean("persona1");
+
+		p1.setNombre("Jarry Poter");
+
+		p1 = null;
+
+		p1 = (Persona) context.getBean("persona1");
+
+		// Asi tambien se hace castin a clase persona.
+		Persona bud = context.getBean("bud", Persona.class);
+		System.out.println(bud.getEdad());
+		System.out.println(bud);
+
 	}
 
 }

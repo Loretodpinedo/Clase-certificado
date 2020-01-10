@@ -18,4 +18,7 @@
 <fullyQualifiedTypeName name="Enano"/>
 <fullyQualifiedTypeName name="CharlaInterminable"/>
 <fullyQualifiedTypeName name="Personaje"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="modelo.entidad.Persona"/>
 </qualifiedTypeNameHistroy>

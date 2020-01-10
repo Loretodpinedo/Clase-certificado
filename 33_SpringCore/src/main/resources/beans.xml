@@ -2,9 +2,31 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+	<!-- Aqui cremaos un objeto persona de alcance Singleton, un objeto gestionado 
+		por spring se suelen llamar bean, para crear un bean en spring debemos primero 
+		crear la clase, y es obligatorio que la clase tenga un constructor pro defecto 
+		Por otro lado, al menos, debemos de crear un bean con un identificador y 
+		dela clase la cual vamos a usar para crear el objeto -->
 	<!-- se crea la etiqueta bean con id=del objeto y la clase class con la 
 		ruta de donde esta la clase -->
 	<bean id="persona1" class="modelo.entidad.Persona"></bean>
 
+	<bean id="bud" class="modelo.entidad.Persona">
+		<property name="nombre" value="Bud Spencer"></property>
+		<property name="edad" value="70"></property>
+		<property name="peso" value="100"></property>		
+	</bean>
+	
+	<!-- Para crear con constructor -->
+		<bean id="terence" class="modelo.entidad.Persona">
+		<constructor-arg index="0" value = "Terence Hill"></constructor-arg>
+		<constructor-arg index="1" value = "55"></constructor-arg>
+		<constructor-arg index="2" value = "78.5l"></constructor-arg>
+		
+		<!-- Asi se crea sin poner el indice, se rellenaran los campos por orden del constructor -->
+		<!--  <constructor-arg value = "Terence Hill"></constructor-arg>-->
+		
+		
+		
+</bean>
 </beans>
