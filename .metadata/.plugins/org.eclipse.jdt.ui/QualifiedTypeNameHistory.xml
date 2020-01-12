@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="Hilos.PrimoRunnable"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="Espada"/>
-<fullyQualifiedTypeName name="Charlatan"/>
 <fullyQualifiedTypeName name="Guerrero"/>
 <fullyQualifiedTypeName name="java.awt.peer.ScrollbarPeer"/>
 <fullyQualifiedTypeName name="FabricaArmas"/>
@@ -12,8 +11,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="FabricaEquipos"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="FabricaPersonajes"/>
 <fullyQualifiedTypeName name="Enano"/>
 <fullyQualifiedTypeName name="CharlaInterminable"/>
@@ -21,4 +18,7 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="modelo.entidad.Persona"/>
+<fullyQualifiedTypeName name="Charlatan"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
