@@ -28,17 +28,20 @@ public class MainCoche {
 		Coche c5 = context.getBean("c5", Coche.class);
 
 		System.out.println("Marca " + c1.getMarca() + ", modelo " + c1.getModelo() + ", matricula " + c1.getMatricula()
-				+ ", segunda mano " + c1.toString() + ", precio " + c1.getPrecio() + ", peso " + c1.getMarca()
-				+ ", " + c1.getMotor());
+				+ ", segunda mano " + c1.toString() + ", precio " + c1.getPrecio() + ", peso " + c1.getPeso() + ", "
+				+ c1.getMotor());
 		System.out.println("Marca " + c2.getMarca() + ", modelo " + c2.getModelo() + ", matricula " + c2.getMatricula()
-				+ ", segunda mano " + c2.toString() + ", precio " + c2.getPrecio() + ", peso " + c2.getMarca() + ", " + c2.getMotor());
+				+ ", segunda mano " + c2.toString() + ", precio " + c2.getPrecio() + ", peso " + c2.getPeso() + ", "
+				+ c2.getMotor());
 		System.out.println("Marca " + c3.getMarca() + ", modelo " + c3.getModelo() + ", matricula " + c3.getMatricula()
-				+ ", segunda mano " + c3.toString() + ", precio " + c3.getPrecio() + ", peso " + c3.getMarca() + c3.getMotor());
+				+ ", segunda mano " + c3.toString() + ", precio " + c3.getPrecio() + ", peso " + c3.getPeso() + ", "
+				+ c3.getMotor());
 		System.out.println("Marca " + c4.getMarca() + ", modelo " + c4.getModelo() + ", matricula " + c4.getMatricula()
-				+ ", segunda mano " + c4.toString() + ", precio " + c4.getPrecio() + ", peso " + c4.getMarca() + c4.getMotor());
+				+ ", segunda mano " + c4.toString() + ", precio " + c4.getPrecio() + ", peso " + c4.getPeso() + ", "
+				+ c4.getMotor());
 		System.out.println("Marca " + c5.getMarca() + ", modelo " + c5.getModelo() + ", matricula " + c5.getMatricula()
-				+ ", segunda mano " + c5.toString() + ", precio " + c5.getPrecio() + ", peso " + c5.getMarca()
-				+ ", con un motor " + c5.getMotor());
+				+ ", segunda mano " + c5.toString() + ", precio " + c5.getPrecio() + ", peso " + c5.getPeso()
+				+ ", " + c5.getMotor());
 
 	}
 

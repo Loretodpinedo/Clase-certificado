@@ -23,6 +23,10 @@ public class Coche {
 		return v;
 	}
 
+	public Coche() {
+		super();
+	}
+
 	public Coche(String matricula, String marca, String modelo, boolean segundaMano, double precio, double peso,
 			Motor motor) {
 		super();
@@ -32,18 +36,6 @@ public class Coche {
 		this.segundaMano = segundaMano;
 		this.precio = precio;
 		this.peso = peso;
-		this.motor = motor;
-	}
-
-	public Coche() {
-		super();
-	}
-
-	public Motor getMotor() {
-		return motor;
-	}
-
-	public void setMotor(Motor motor) {
 		this.motor = motor;
 	}
 
@@ -93,6 +85,14 @@ public class Coche {
 
 	public void setPeso(double peso) {
 		this.peso = peso;
+	}
+
+	public Motor getMotor() {
+		return motor;
+	}
+
+	public void setMotor(Motor motor) {
+		this.motor = motor;
 	}
 
 }

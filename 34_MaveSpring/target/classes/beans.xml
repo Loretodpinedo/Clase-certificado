@@ -4,30 +4,32 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="m1" class="modelo.entidad.Motor">
-	<property name="motor" value="Diesel"></property>
-	<property name="cv" value="300"></property>
-	<property name="cilindrada" value="1500"></property>
+		<property name="motor" value="Diesel"></property>
+		<property name="cv" value="300"></property>
+		<property name="cilindrada" value="1500"></property>
 	</bean>
 
-<bean id="m2" class="modelo.entidad.Motor">
-	<property name="motor" value="Gasolina"></property>
-	<property name="cv" value="100"></property>
-	<property name="cilindrada" value="1700"></property>
+	<bean id="m2" class="modelo.entidad.Motor">
+		<property name="motor" value="Gasolina"></property>
+		<property name="cv" value="100"></property>
+		<property name="cilindrada" value="1700"></property>
 	</bean>
 
-<bean id="m3" class="modelo.entidad.Motor">
-		<constructor-arg index="0" value="Electrico"></constructor-arg>
-		<constructor-arg index="1" value="6900"></constructor-arg>
-		<constructor-arg index="2" value="9000"></constructor-arg>
+	<!-- Si pones los atributos en el mismo orden que el constructor no hace 
+		falta porner el index -->
+	<bean id="m3" class="modelo.entidad.Motor">
+		<constructor-arg value="Electrico"></constructor-arg>
+		<constructor-arg value="6900"></constructor-arg>
+		<constructor-arg value="9000"></constructor-arg>
 
-</bean>
+	</bean>
 
-<bean id="m4" class="modelo.entidad.Motor">
+	<bean id="m4" class="modelo.entidad.Motor">
 		<constructor-arg index="0" value="Hibrido"></constructor-arg>
 		<constructor-arg index="1" value="9900"></constructor-arg>
 		<constructor-arg index="2" value="8500"></constructor-arg>
 
-</bean>
+	</bean>
 
 	<bean id="c1" class="modelo.entidad.Coche">
 		<property name="matricula" value="111111111A"></property>
@@ -58,7 +60,7 @@
 		<property name="peso" value="450"></property>
 		<property name="motor" ref="m3"></property>
 	</bean>
-	
+
 	<bean id="c4" class="modelo.entidad.Coche">
 		<constructor-arg index="0" value="444444d"></constructor-arg>
 		<constructor-arg index="1" value="Renault"></constructor-arg>
@@ -68,7 +70,7 @@
 		<constructor-arg index="5" value="500"></constructor-arg>
 		<constructor-arg index="6" ref="m4"></constructor-arg>
 	</bean>
-	
+
 	<bean id="c5" class="modelo.entidad.Coche">
 		<property name="matricula" value="5555555555E"></property>
 		<property name="marca" value="Renault"></property>
@@ -78,12 +80,12 @@
 		<property name="peso" value="320"></property>
 		<property name="motor">
 			<bean class="modelo.entidad.Motor">
-			<property name="motor" value="Aereo"></property>
-			<property name="cv" value="500000"></property>
-			<property name="cilindrada" value="10700"></property>
+				<property name="motor" value="Aereo"></property>
+				<property name="cv" value="500000"></property>
+				<property name="cilindrada" value="10700"></property>
 			</bean>
-			</property>
-			
+		</property>
+
 	</bean>
 
 </beans>
