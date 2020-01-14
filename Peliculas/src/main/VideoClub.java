@@ -1,9 +1,10 @@
-package MainPeliculas;
+package main;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import Clases.Pelicula;
-import Clases.Director;
+
+import modelo.entidad.Director;
+import modelo.entidad.Pelicula;
 
 public class VideoClub {
 

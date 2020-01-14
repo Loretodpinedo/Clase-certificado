@@ -1,18 +1,22 @@
-package Clases;
+package modelo.entidad;
 
 public class Director {
-	
+
 	private String nombDir = "", edad = "";
-	
-	
-	
-				
-		
-	
 
 	@Override
 	public String toString() {
-		return  nombDir + ", edad " + edad;
+		return nombDir + ", edad " + edad;
+	}
+
+	public Director(String nombDir, String edad) {
+		super();
+		this.nombDir = nombDir;
+		this.edad = edad;
+	}
+
+	public Director() {
+		super();
 	}
 
 	public String getNombDir() {
@@ -30,10 +34,5 @@ public class Director {
 	public void setEdad(String edad) {
 		this.edad = edad;
 	}
-	
-	
-	
-	
-	
 
 }
