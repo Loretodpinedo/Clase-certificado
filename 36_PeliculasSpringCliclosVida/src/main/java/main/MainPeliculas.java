@@ -9,15 +9,23 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import modelo.entidad.Director;
 import modelo.entidad.Pelicula;
 
-public class MainePeliculas {
+public class MainPeliculas {
 
 	public static ApplicationContext context;
+
+	public static ArrayList<Pelicula> pelis;
+	public static ArrayList<Pelicula> pelisGenero;
 
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
 		context = new ClassPathXmlApplicationContext("beans.xml");
+
+		// ArrayList<Pelicula> pelis = (ArrayList<Pelicula>)
+		// context.getBean("peliculas");
+		pelis = context.getBean("peliculas", ArrayList.class);
+		pelisGenero = context.getBean("peliculasGenero", ArrayList.class);
 
 		int opcion = 0;
 
@@ -36,6 +44,9 @@ public class MainePeliculas {
 			case 3:
 				buscaTitulo();
 				break;
+			case 4:
+				buscaGenero();
+				break;
 			default:
 				System.out.println("Hasta luego Maricarmen");
 
@@ -50,17 +61,16 @@ public class MainePeliculas {
 		System.out.println("1 -Alta pelicula");
 		System.out.println("2 -Lista peliculas");
 		System.out.println("3 -Buscar pelicula por titulo");
+		System.out.println("4 -Buscar pelicula por genero");
 		System.out.println("0 -Salir del programa");
 		int opcion = sc.nextInt();
-		if (opcion < 0 || opcion > 3) {
+		if (opcion < 0 || opcion > 4) {
 			System.out.println("Opcion inexistente");
 		}
 		return opcion;
 	}
 
 	private static void listarPelicula() {
-
-		ArrayList<Pelicula> pelis = (ArrayList<Pelicula>) context.getBean("Peliculas");
 
 		for (Pelicula peli : pelis) {
 			System.out.println("El listado de peliculas es el siguiente:" + peli);
@@ -71,6 +81,35 @@ public class MainePeliculas {
 		String titulo = "";
 		System.out.println("Titulo de la pelicula");
 		titulo = sc.nextLine();
+		String titulo2 = sc.nextLine();
+
+		for (Pelicula peli : pelis) {
+			if (peli.getTitulo().equals(titulo)) {
+				System.out.println(peli.getTitulo());
+
+			} else {
+				System.out.println("No hay ninguna pelicula con ese titulo");
+			}
+		}
+	}
+
+//da error arrglar
+	private static void buscaGenero() {
+		String genero = "";
+		System.out.println("Genero de la pelicula");
+		genero = sc.nextLine();
+		String genero2 = sc.nextLine();
+
+		for (Pelicula peli : pelis) {
+			if (peli.getGenero().equals(genero) || peli.getGenero().equals(genero2)) {
+				pelisGenero.add(peli);
+				System.out.println(pelisGenero);
+
+			} else {
+				System.out.println("No hay ninguna pelicula de este genero");
+			}
+
+		}
 
 	}
 
@@ -82,7 +121,6 @@ public class MainePeliculas {
 		System.out.println("Titulo pelicula");
 		String nombre = sc.nextLine();
 		String nombre1 = sc.nextLine();
-		
 
 		peli.setTitulo(nombre);
 
@@ -102,9 +140,9 @@ public class MainePeliculas {
 		peli.setAñoEstreno(añoEstreno);
 
 		peli.setDirector(direc);
+		pelis.add(peli);
 
 		return null;
 	}
-
 
 }

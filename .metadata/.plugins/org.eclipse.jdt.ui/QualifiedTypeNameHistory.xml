@@ -8,17 +8,20 @@
 <fullyQualifiedTypeName name="java.awt.peer.ScrollbarPeer"/>
 <fullyQualifiedTypeName name="FabricaArmas"/>
 <fullyQualifiedTypeName name="Arma"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="FabricaEquipos"/>
 <fullyQualifiedTypeName name="FabricaPersonajes"/>
 <fullyQualifiedTypeName name="Enano"/>
 <fullyQualifiedTypeName name="CharlaInterminable"/>
 <fullyQualifiedTypeName name="Personaje"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="modelo.entidad.Persona"/>
 <fullyQualifiedTypeName name="Charlatan"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="modelo.entidad.Casa"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="main.MainePeliculas"/>
+<fullyQualifiedTypeName name="modelo.entidad.Pelicula"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

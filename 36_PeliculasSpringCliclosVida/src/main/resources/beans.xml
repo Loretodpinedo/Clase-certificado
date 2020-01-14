@@ -3,6 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+	<!-- Se pueden dar de alta los objetos sin declarar los atributos, se crean 
+		a null -->
 	<bean id="director" class="modelo.entidad.Director"
 		scope="prototype">
 		<property name="nombDir" value=""></property>
@@ -19,16 +22,13 @@
 	</bean>
 
 	<bean id="peliculas" class="java.util.ArrayList">
-		<constructor-arg>
-			<list value-type="modelo.entidad.Pelicula">
-				<ref bean="pelicula" />
-
-			</list>
-
-		</constructor-arg>
-
-
 	</bean>
+
+	<bean id="peliculasGenero" class="java.util.ArrayList"
+		scope="prototype">
+	</bean>
+
+	<!-- Aqui tengo que crear tambien el gestor ver ejercicio 35_ de Felix -->
 
 
 
