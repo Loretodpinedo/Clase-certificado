@@ -66,6 +66,7 @@ public class DaoCliente {
 			List<Cliente> listaClientes = new ArrayList<Cliente>();
 
 			while (rs.next()) {
+				
 				cliente = MainCliente.context.getBean("cliente", Cliente.class);
 
 				cliente.setId(rs.getInt(1));
@@ -132,7 +133,8 @@ public class DaoCliente {
 			Cliente cliente = null;
 
 			while (rs.next()) {
-				cliente = new Cliente();
+				
+				cliente = MainCliente.context.getBean("cliente", Cliente.class);
 				cliente.setId(rs.getInt(1));
 				cliente.setDni(rs.getString(2));
 				cliente.setNombre(rs.getString(3));
@@ -156,6 +158,8 @@ public class DaoCliente {
 			return null;
 		}
 
+		//String query = "select id,dni,nombre,edad from clientes where nombre like ?";
+		//ps.setString(1, "%"+nombre+"%"); buscara un nombre con posibles caracteres antes  despues es el % quien lo dice
 		String query = "select id,dni,nombre,edad from clientes where nombre=?";
 
 		try {

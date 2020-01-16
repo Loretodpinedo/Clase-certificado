@@ -21,6 +21,7 @@ public class GestorCliente {
 		this.daocliente = daoCliente;
 	}
 
+
 	public DaoCliente getCliente() {
 		return daocliente;
 	}

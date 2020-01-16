@@ -33,8 +33,6 @@ public class MainCliente {
 
 			if (opcion.equals("1")) {
 
-				
-				
 				System.out.println("Introduzca el dni: ");
 				String dni = sc.nextLine();
 				System.out.println("Introduzca el nombre:");
@@ -103,9 +101,9 @@ public class MainCliente {
 				System.out.println("Introduzca el id del cliente a borrar");
 
 				String id = sc.nextLine();
-				int iid = Integer.parseInt(id);
+				int iId = Integer.parseInt(id);
 
-				boolean c = gc.borrarPorId(iid);
+				boolean c = gc.borrarPorId(iId);
 				if (c == true) {
 					System.out.println("El cliente se ha borrado");
 				} else {
