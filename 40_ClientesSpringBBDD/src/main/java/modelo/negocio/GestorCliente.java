@@ -43,10 +43,12 @@ public class GestorCliente {
 	 */
 
 	public int alta(Cliente cliente) {
-		if (cliente.getDni().length() < 9) {
-			return 2;
+
+		if (cliente.getDni().length() != 9) {
+
+			return 1;
 		}
-		if (cliente.getDni().endsWith("1") && cliente.getDni().endsWith("2")) {
+		if (!Character.isLetter(cliente.getDni().charAt(8))) {
 			return 2;
 		}
 		if (buscarPorNombre(cliente.getDni()) != null) {
@@ -65,7 +67,7 @@ public class GestorCliente {
 	}
 
 	public boolean borrarPorId(int id) {
-		return true;
+		return daocliente.borrarPorId(id);
 	}
 
 }

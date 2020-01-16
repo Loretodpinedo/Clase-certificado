@@ -68,8 +68,9 @@ public class DaoCliente {
 			while (rs.next()) {
 				cliente = MainCliente.context.getBean("cliente", Cliente.class);
 
-				cliente.setDni(rs.getString(1));
-				cliente.setNombre(rs.getString(2));
+				cliente.setId(rs.getInt(1));
+				cliente.setDni(rs.getString(2));
+				cliente.setNombre(rs.getString(3));
 				cliente.setEdad(rs.getInt(4));
 
 				listaClientes.add(cliente);
@@ -107,7 +108,7 @@ public class DaoCliente {
 				return 0;
 			}
 		} catch (SQLException e) {
-			System.out.println("Error en el insertar");
+			System.out.println("Error al insertar");
 			e.printStackTrace();
 			return 4;
 		} finally {
@@ -132,6 +133,7 @@ public class DaoCliente {
 
 			while (rs.next()) {
 				cliente = new Cliente();
+				cliente.setId(rs.getInt(1));
 				cliente.setDni(rs.getString(2));
 				cliente.setNombre(rs.getString(3));
 				cliente.setEdad(rs.getInt(4));
@@ -139,7 +141,7 @@ public class DaoCliente {
 			return cliente;
 
 		} catch (SQLException e) {
-			System.out.println("Error en el insertar");
+			System.out.println("Error al insertar");
 			e.printStackTrace();
 			return null;
 
@@ -175,7 +177,7 @@ public class DaoCliente {
 			}
 			return listaClientes;
 		} catch (SQLException e) {
-			System.out.println("Error en el insertar");
+			System.out.println("Error al insertar");
 			e.printStackTrace();
 			return null;
 		} finally {
@@ -203,7 +205,7 @@ public class DaoCliente {
 				return true;
 			}
 		} catch (SQLException e) {
-			System.out.println("Error en el insertar");
+			System.out.println("Error al insertar");
 			e.printStackTrace();
 			return false;
 		} finally {

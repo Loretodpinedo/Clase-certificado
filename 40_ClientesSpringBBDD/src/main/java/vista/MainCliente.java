@@ -33,6 +33,8 @@ public class MainCliente {
 
 			if (opcion.equals("1")) {
 
+				
+				
 				System.out.println("Introduzca el dni: ");
 				String dni = sc.nextLine();
 				System.out.println("Introduzca el nombre:");
@@ -78,7 +80,7 @@ public class MainCliente {
 
 				Cliente c = gc.buscarPorId(iid);
 				if (c == null) {
-					System.out.println("El libro no se ha encontrado");
+					System.out.println("El cliente no se ha encontrado");
 				} else {
 					System.out.println(c);
 				}
@@ -93,8 +95,9 @@ public class MainCliente {
 						System.out.println(c);
 					}
 				} else {
-					System.out.println("No hay conincidencias por editorial");
+					System.out.println("No hay ningun cliente con ese nombre");
 				}
+
 			} else if (opcion.equals("5")) {
 
 				System.out.println("Introduzca el id del cliente a borrar");
@@ -103,6 +106,11 @@ public class MainCliente {
 				int iid = Integer.parseInt(id);
 
 				boolean c = gc.borrarPorId(iid);
+				if (c == true) {
+					System.out.println("El cliente se ha borrado");
+				} else {
+					System.out.println("El cliente no se ha borrado");
+				}
 
 			}
 
