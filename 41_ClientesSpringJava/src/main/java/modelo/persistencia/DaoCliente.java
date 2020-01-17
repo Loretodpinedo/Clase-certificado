@@ -15,9 +15,8 @@ import com.mysql.cj.protocol.Resultset;
 import com.mysql.cj.xdevapi.PreparableStatement;
 
 import modelo.entidad.Cliente;
-import vista.MainCliente;
+import modelo.vista.MainCliente;
 
-@Repository
 public class DaoCliente {
 
 	private Connection conexion;
