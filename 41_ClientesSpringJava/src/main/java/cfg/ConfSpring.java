@@ -1,8 +1,7 @@
 package cfg;
 
-import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
 //@ComponentScan(basePackages = "modelo") Esto es para que valla a buscar anotaciones, 
 //en este caso no es necesario ya que la configuracion la lleva esta clase.F
@@ -29,6 +28,15 @@ public class ConfSpring {
 		return gc;
 
 	}
+	/*Podria ser tambien asi
+	 * 
+	 * public GestorCliente gestor(DaoCliente dao) {
+	 * GestorClientes gp = GestorClientes();
+	 * gp.setGestorCliente(daoCliente);
+	 * return daoCliente;
+	 * 
+	 * Hacer setter de este metodo.}
+	 */
 
 	@Bean
 	public DaoCliente dao() {
@@ -36,6 +44,7 @@ public class ConfSpring {
 		return dc;
 	}
 
+	//Este no hace falta.
 	@Bean
 	public MainCliente vista() {
 		MainCliente vista = new MainCliente();
