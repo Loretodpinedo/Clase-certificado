@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="modelo.entidad.Pelicula"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.util.TimeZone"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -34,15 +33,21 @@
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="modelo.persistencia.DaoCliente"/>
-<fullyQualifiedTypeName name="vista.MainCliente"/>
 <fullyQualifiedTypeName name="javax.swing.text.Position"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="modelo.negocio.GestorCliente"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="modelo.entidad.Cliente"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="vista.MainCliente"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="modelo.vista.MainCliente"/>
+<fullyQualifiedTypeName name="modelo.negocio.GestorCliente"/>
+<fullyQualifiedTypeName name="modelo.persistencia.DaoCliente"/>
+<fullyQualifiedTypeName name="cfg.ConfSpring"/>
+<fullyQualifiedTypeName name="modelo.entidad.Cliente"/>
 </qualifiedTypeNameHistroy>
