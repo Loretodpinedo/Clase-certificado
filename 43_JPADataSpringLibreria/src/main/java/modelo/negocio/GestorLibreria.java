@@ -43,6 +43,24 @@ public class GestorLibreria {
 		return libroDao.findAll();
 
 	}
-	
-	
+
+	public List<Libro> buscarPorTitulo(String titulo) {
+
+		return libroDao.findByTituloContainingIgnoreCase(titulo);
+	}
+
+	public List<Libro> buscarIsbin(String isbn) {
+
+		return libroDao.findByIsbn(isbn);
+	}
+
+	public List<Libro> buscarPorEditorial(String editorial) {
+
+		return libroDao.findByEditorialContainingIgnoreCase(editorial);
+	}
+
+	public List<Libro> buscarPorTituloYEditorial(String titulo, String editorial) {
+
+		return libroDao.findByTituloContainingIgnoreCaseAndEditorialContainingIgnoreCase(titulo, editorial);
+	}
 }
