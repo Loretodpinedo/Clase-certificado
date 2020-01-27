@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="a1" class="modelo.entidad.Asiento">
+		<property name="numero" value="1"></property>
+		<property name="color" value="verde"></property>
+	</bean>
+
+	<bean id="a2" class="modelo.entidad.Asiento">
+		<property name="numero" value="2"></property>
+		<property name="color" value="azul"></property>
+	</bean>
+
+	<bean id="a3" class="modelo.entidad.Asiento">
+		<property name="numero" value="3"></property>
+		<property name="color" value="rojo"></property>
+	</bean>
+
+	<bean id="a4" class="modelo.entidad.Asiento">
+		<property name="numero" value="4"></property>
+		<property name="color" value="amarillo"></property>
+	</bean>
+
+	<bean id="a5" class="modelo.entidad.Asiento">
+		<property name="numero" value="5"></property>
+		<property name="color" value="negro"></property>
+	</bean>
+
+	<bean id="a6" class="modelo.entidad.Asiento">
+		<property name="numero" value="6"></property>
+		<property name="color" value="blanco"></property>
+	</bean>
+
+
+
+
+	<bean id="r1" class="modelo.entidad.Rueda">
+		<constructor-arg index="0" value="hotweels">
+		</constructor-arg>
+		<constructor-arg index="1" value="nubes">
+		</constructor-arg>
+	</bean>
+
+	<bean id="r2" class="modelo.entidad.Rueda">
+		<constructor-arg index="0" value="hotweels">
+		</constructor-arg>
+		<constructor-arg index="1" value="nubes">
+		</constructor-arg>
+	</bean>
+
+
+	<bean id="r3" class="modelo.entidad.Rueda">
+		<property name="marca" value="aterriza como puedas"></property>
+		<property name="material" value="polvo galactico"></property>
+	</bean>
+
+
+	<bean id="r4" class="modelo.entidad.Rueda">
+		<property name="marca" value="aterriza como puedas"></property>
+		<property name="material" value="polvo galactico"></property>
+	</bean>
+
+
+
+
+	<bean id="asientos1" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Avion">
+				<ref bean="a1" />
+				<ref bean="a2" />
+				<ref bean="a3" />
+
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="asientos2" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Avion">
+				<ref bean="a4" />
+				<ref bean="a5" />
+				<ref bean="a6" />
+
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="ruedas1" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Rueda">
+				<ref bean="r1" />
+				<ref bean="r2" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="ruedas2" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Rueda">
+				<ref bean="r3" />
+				<ref bean="r4" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="avion1" class="modelo.entidad.Avion">
+		<property name="id" value="1526"></property>
+		<property name="marca" value="Vuela mucho"></property>
+		<property name="asientos" ref="asientos1"></property>
+		<property name="ruedas" ref="ruedas1"></property>
+		<property name="motores">
+			<list value-type="modelo.entidad.Motor">
+				<bean class="modelo.entidad.Motor">
+					<property name="cv" value="122223333"></property>
+					<property name="cilindrada" value="2333333333"></property>
+				</bean>
+				<bean class="modelo.entidad.Motor">
+					<property name="cv" value="122223333"></property>
+					<property name="cilindrada" value="2333333333"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+
+	<bean id="avion2" class="modelo.entidad.Avion">
+		<property name="id" value="2356"></property>
+		<property name="marca" value="Vuela mucho y alto"></property>
+		<property name="asientos" ref="asientos2"></property>
+		<property name="ruedas" ref="ruedas2"></property>
+		<property name="motores">
+			<list value-type="modelo.entidad.Motor">
+				<bean class="modelo.entidad.Motor">
+					<property name="cv" value="122223333"></property>
+					<property name="cilindrada" value="2333333333"></property>
+				</bean>
+				<bean class="modelo.entidad.Motor">
+					<property name="cv" value="122223333"></property>
+					<property name="cilindrada" value="2333333333"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="aviones" class="java.util.ArrayList">
+		<constructor-arg>
+			<list value-type="modelo.entidad.Avion">
+				<ref bean="avion1" />
+				<ref bean="avion2" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+	<bean id="aero1" class="modelo.entidad.Aeropuerto">
+		<property name="nombre" value="Barajas"></property>
+		<property name="ciudad" value="Madrid"></property>
+		<!-- <property name="aviones" ref="aviones"></property>-->
+	</bean>
+
+	<bean id="aero2" class="modelo.entidad.Aeropuerto">
+		<property name="nombre" value="Prat"></property>
+		<property name="ciudad" value="Barcelona"></property>
+		<property name="aviones" ref="aviones"></property>
+	</bean>
+
+
+
+
+
+
+</beans>
