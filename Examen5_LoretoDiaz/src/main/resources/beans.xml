@@ -129,6 +129,7 @@
 	<bean id="avion2" class="modelo.entidad.Avion">
 		<property name="id" value="2356"></property>
 		<property name="marca" value="Vuela mucho y alto"></property>
+		<property name="km" value="2000"></property>
 		<property name="asientos" ref="asientos2"></property>
 		<property name="ruedas" ref="ruedas2"></property>
 		<property name="motores">
@@ -155,7 +156,7 @@
 	</bean>
 
 
-	<bean id="aero1" class="modelo.entidad.Aeropuerto">
+	<bean id="aero1" class="modelo.entidad.Aeropuerto" autowire="byName">
 		<property name="nombre" value="Barajas"></property>
 		<property name="ciudad" value="Madrid"></property>
 		<!-- <property name="aviones" ref="aviones"></property>-->
