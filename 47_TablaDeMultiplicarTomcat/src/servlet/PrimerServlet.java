@@ -69,6 +69,15 @@ public class PrimerServlet extends HttpServlet implements Servlet {
 					+ "<img alt='Tabla de multiplicar' src='tablamultiplicar.png'>"
 					+ "</body>"
 					+ "</html>");
+		}if(request.getRemoteAddr().equals("192.168.1.83")) {
+			response.getWriter().append(""
+					+ "<html>"
+					+ "<body>"
+					+ "<title>Hola Vidal</title>"
+					+"<marquee style='color: yellow; font-family: Bookman Old Style; font-size: 60px'>Hola Vidal</marquee>"
+					+ "<img alt='Tabla de multiplicar' src='tablamultiplicar.png'>"
+					+ "</body>"
+					+ "</html>");
 		}else {
 		
 			response.getWriter().append(""
