@@ -9,7 +9,6 @@ INDEX VERSION 1.131+C:\Users\aula2m\Desktop\Loreto\Clase-certificado\.metadata\.
 3072534977.index
 3253420475.index
 965320598.index
-1097860004.index
 1350174468.index
 3559052369.index
 2922444588.index

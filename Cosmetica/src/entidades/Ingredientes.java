@@ -2,7 +2,7 @@ package entidades;
 
 import java.util.ArrayList;
 
-public abstract class Todo {
+public abstract class Ingredientes {
 	
 	abstract void altaIngrediente();	
 	abstract void calculoCosteReceta();
