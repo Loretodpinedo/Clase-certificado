@@ -40,12 +40,33 @@ public class PrimerServlet extends HttpServlet implements Servlet {
 		System.out.println("Direccion Remota " + request.getRemoteAddr());
 		
 		
-		if(request.getRemoteAddr().equals("192.168.1.90")){
+		if(request.getRemoteAddr().equals("192.168.1.85")){
 			response.getWriter().append(""
 					+ "<html>"
 					+ "<body>"
-					+ "<title>segunda pagina</title>"
+					+ "<title>Aqui no Maricarmen</title>"
 					+ "<h1 style='color:red'>Estas baneado Maricarmen!!</h1>"
+					+ "</body>"
+					+ "</html>");
+			
+		}if(request.getRemoteAddr().equals("192.168.1.90")) {
+			response.getWriter().append(""
+					+ "<html>"
+					+ "<body>"
+					+ "<title>Hola Jose</title>"
+					+"<marquee style='color: blue; font-family: Bookman Old Style; font-size: 90px'>Hola Jose</marquee>"
+					+ "<img alt='Tabla de multiplicar' src='tablamultiplicar.png'>"
+					+ "</body>"
+					+ "</html>");
+			
+		}if(request.getRemoteAddr().equals("192.168.1.50")) {
+			response.getWriter().append(""
+					+ "<html>"
+					+ "<body>"
+					+ "<title>Hola Felix</title>"
+					+"<marquee style='color: yellow; font-family: Bookman Old Style; font-size: 30px'>Hola Felix</marquee>"
+					+"<h1 style='color:yellow' 'aling: center'>Hola Félix</h1>"
+					+ "<img alt='Tabla de multiplicar' src='tablamultiplicar.png'>"
 					+ "</body>"
 					+ "</html>");
 		}else {
@@ -53,13 +74,14 @@ public class PrimerServlet extends HttpServlet implements Servlet {
 			response.getWriter().append(""
 					+ "<html>"
 					+ "<body>"
-					+ "<title>segunda pagina</title>"
+					+ "<title>Tablas de multiplicar</title>"
 					+ "<img alt='Tabla de multiplicar' src='tablamultiplicar.png'>"
 					+ "</body>"
 					+ "</html>");
 		}
 		response.setContentType("text/html");
 	}
+	
 	
 
 	
