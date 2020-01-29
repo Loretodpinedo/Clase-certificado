@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Arma"/>
-<fullyQualifiedTypeName name="FabricaEquipos"/>
 <fullyQualifiedTypeName name="FabricaPersonajes"/>
 <fullyQualifiedTypeName name="Enano"/>
 <fullyQualifiedTypeName name="CharlaInterminable"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="modelo.entidad.Aeropuerto"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="entidades.Aceite"/>
+<fullyQualifiedTypeName name="entidades.Emulsionante"/>
 </qualifiedTypeNameHistroy>

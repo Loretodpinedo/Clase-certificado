@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario ordenador</title>
+</head>
+<body>
+
+<form action="ServletFormulario" method="post">
+	<font color="#1cb1dc" size="5">Nombre: </font><input type="text" name="Nombre" value="" placeholder="Nombre" required="required">
+	<br/>
+	<font color="#1cb1dc" size="5">Dirección: </font><input type="text" name="direccion" value="" placeholder="direccion" required="required">
+	<br/>
+	<font color="#1cb1dc" size="5">Email: </font><input type="email" name="email" value="" placeholder="email" required="required">
+	<br/>
+	
+	<h3 style="color: #1cb1dc; font-family: Bookman Old Style; font-size: 30px">¿Que procesador quieres?</h3>
+	
+	<input type="radio" name="procesador" value="i3">i3. 
+	<input type="radio" name="procesador" value="i5">i5.
+	<input type="radio" name="procesador" value="i7">i7.
+	<input type="radio" name="procesador" value="i9">i9.
+	
+	<h3 style="color: #1cb1dc; font-family: Bookman Old Style; font-size: 30px">¿Cuanta RAM quieres?</h3>
+
+	<input type="radio" name="ram" value="i3">8 gb. 
+	<input type="radio" name="ram" value="i5">16 gb.
+	<input type="radio" name="ram" value="i7">32 gb.
+	<input type="radio" name="ram" value="i9">64 gb.
+ 
+ 	
+	<h3 style="color: #1cb1dc; font-family: Bookman Old Style; font-size: 30px">¿Que perifericos quieres?</h3>
+	
+	<br/><input type="checkbox" name="componente" value="raton">Ratón.
+	<br/><input type="checkbox" name="componente" value="pantalla">Pantalla.
+	<br/><input type="checkbox" name="componente" value="teclado">Teclado.
+	<br/><input type="checkbox" name="componente" value="Altavoz">Altavoz.
+	
+	<h3 style="color: #1cb1dc; font-family: Bookman Old Style; font-size: 30px">Comentarios</h3>
+	<textarea rows="30" cols="50" name="proceso"></textarea>
+	<br/>
+	<input type="submit" value="Enviar">
+	</form>
+	
+
+</body>
+</html>
