@@ -1,36 +1,62 @@
 package modelo.entidad;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Pc {
 
 	private String ram;
 	private String procesador;
 	private Cliente cliente;
-	private ArrayList<Componente> componentes;
+	private String[] arraycomponentes;
+	private List<String> listaComponentes;
+	private String comentarios;
 	
 		
 	
-	@Override
-	public String toString() {
-		return "Pc [ram=" + ram + ", procesador=" + procesador + ", componentes=" + componentes + "]";
-	}
+	
 	
 
-	public Pc(String ram, String procesador, ArrayList<Componente> componentes, Cliente cliente) {
-		super();
-		this.ram = ram;
-		this.procesador = procesador;
-		this.componentes = componentes;
-		this.cliente = cliente;
+	@Override
+	public String toString() {
+		return "Pc [ram=" + ram + ", procesador=" + procesador + ", cliente=" + cliente + ", arraycomponentes="
+				+ Arrays.toString(arraycomponentes) + ", listaComponentes=" + listaComponentes + ", comentarios="
+				+ comentarios + "]";
 	}
-	
-	
-	public Pc() {
-		super();
+
+
+
+
+
+	public String getComentarios() {
+		return comentarios;
 	}
-	
-	
+
+
+
+
+
+	public void setComentarios(String comentarios) {
+		this.comentarios = comentarios;
+	}
+
+
+	public String[] getArraycomponentes() {
+		return arraycomponentes;
+	}
+
+
+
+
+
+	public void setArraycomponentes(String[] arraycomponentes) {
+		this.arraycomponentes = arraycomponentes;
+	}
+
+
+
+
 
 	public String getRam() {
 		return ram;
@@ -44,11 +70,11 @@ public class Pc {
 	public void setProcesador(String procesador) {
 		this.procesador = procesador;
 	}
-	public ArrayList<Componente> getComponentes() {
-		return componentes;
+	public String[] getComponentes() {
+		return arraycomponentes;
 	}
-	public void setComponentes(ArrayList<Componente> componentes) {
-		this.componentes = componentes;
+	public void setComponentes(String[] componentes) {
+		this.arraycomponentes = componentes;
 	}
 
 
@@ -59,6 +85,16 @@ public class Pc {
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+
+	public List<String> getListaComponentes() {
+		return listaComponentes;
+	}
+
+
+	public void setListaComponentes(List<String> listaComponentes) {
+		this.listaComponentes = listaComponentes;
 	}
 	
 	
