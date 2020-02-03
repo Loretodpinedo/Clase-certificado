@@ -6,37 +6,29 @@
 <meta charset="ISO-8859-1">
 <title>Registro</title>
 
-<style>
-
-div {
-text-align: center;
-}
-
-</style>
 </head>
-<body>
+<body background="sandia.jpg">
 
 <h1
-			style="color: #1cb1bl; font-family: Calibri (Cuerpo); font-size: 60px">
+			style="color: #51030d; font-family: Calibri (Cuerpo); font-size: 60px; text-align: center;">
 			<i>Registro</i>
 		</h1>
+		<!--  donde y como va a llevar-->
+		<form action="ServletLoguin"  method="post" style="color: #51030d; font-size: 50px; text-align: center;">
 		
-		<form method="post" action="ServletLoguin">
-		<font color="#1cb1db" size="5">Usuario:</font><input type="text"
-			name="User" placeholder="Inserte el nombre de usuario"
+		<font  >Usuario:</font> <br/><input type="text"
+			name="nombre" placeholder="Inserte el nombre de usuario"
 			required="required" /> 
 			<br /> 
-		<font color="#1cb1db" size="5">Password:</font><input
-			type="password" name="password" placeholder="Inserte la contraseña"
+		<font>Contraseña:</font><br/><input
+			type="password" name="contraseña" placeholder="Inserte la contraseña"
 			required="required" /> 
 			<br />
 			
 		<input type="submit" value="Enviar">
 		
 	</form>	
-	<form action="UnMontonDeJabon.html">
-		<input type="submit" value="Volver">
-	</form>
+	
 	
 
 </body>
