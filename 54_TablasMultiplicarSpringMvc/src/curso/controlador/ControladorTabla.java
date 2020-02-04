@@ -14,6 +14,14 @@ public class ControladorTabla {
 	// OJO!!! hay que pasar por el super servlet por lo tanto
 	// esta url realmente es : "/mvc/tablamultiplicar"
 
+	@RequestMapping("inicio")
+
+	public String registro() {
+
+		return "registro";
+
+	}
+	
 	@RequestMapping("tabla")
 
 	public String tablamultipicacion() {
@@ -29,6 +37,8 @@ public class ControladorTabla {
 		return "segundaTabla";
 
 	}
+	
+	
 	
 	
 
