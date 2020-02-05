@@ -6,10 +6,10 @@
     <servlet-name>spring-mvc</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
-      <param-name>contextConfigLocation</param-name>
+      <param-name>contextConfigLocation</param-name><!-- Arranca el contexto de spring -->
       <param-value>/WEB-INF/spring-mvc.xml</param-value>
     </init-param>
-    <load-on-startup>1</load-on-startup>
+    <load-on-startup>1</load-on-startup><!-- Indica el orden de arranque de los servlet -->
   </servlet>
   
   <servlet-mapping>
