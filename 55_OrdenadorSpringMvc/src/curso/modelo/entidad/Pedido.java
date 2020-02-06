@@ -1,8 +1,10 @@
 package curso.modelo.entidad;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Component
+@RequestScope
 public class Pedido {
 
 	private Pc pc;

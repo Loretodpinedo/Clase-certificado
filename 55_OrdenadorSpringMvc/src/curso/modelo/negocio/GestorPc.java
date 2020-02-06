@@ -1,14 +1,20 @@
 package curso.modelo.negocio;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import curso.modelo.entidad.Pedido;
 
 @Service
 public class GestorPc {
+	//ESta es la manera clasica, Felix lo ha hecho asi
+	//public boolean validar(Pedido p) {
 	
-	public boolean validar(Pedido p) {
+	@Autowired
+	private Pedido p;
+	
+	public boolean validar() {
 		
 		if (p.getDirCliente().isEmpty()) {
 			return false;

@@ -2,9 +2,11 @@ package curso.modelo.entidad;
 
 import java.util.Arrays;
 import java.util.List;
-
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
+
 @Component
+@RequestScope
 public class Pc {
 
 	private String ram;
