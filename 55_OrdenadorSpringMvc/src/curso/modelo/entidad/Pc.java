@@ -15,8 +15,8 @@ public class Pc {
 	
 	@Override
 	public String toString() {
-		return "Ram: " + ram + ", procesador: " + procesador + ", arrayComponentes: "
-				+ Arrays.toString(arrayComponentes) + ", listaComponentes: " + listaComponentes;
+		return "Ram: " + ram + "procesador: " + procesador + " Componentes: "
+				+ Arrays.toString(arrayComponentes);
 	}
 	
 	

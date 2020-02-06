@@ -32,24 +32,24 @@ td {
 		</tr>
 		<tr>
 			<td>Nombre: ${pedido.nombreCliente}</td>
-			<td>Procesador: ${pc.procesador} </td>
+			<td>Pedido:  </td>
 		</tr>
 		<tr>
 			<td>Direccion: ${pedido.dirCliente}</td>
-			<td>Ram: ${pc.ram}</td>
+			<td> Procesador: ${pedido.pc.procesador}</td>
 		</tr>
 		<tr>
 			<td>Email: ${pedido.emailCliente}</td>
-			<td>${pc.listaComponentes}</td>
+			<td> Ram: ${pedido.pc.ram}</td>
+			
 		</tr>
 		<tr>
-			<td>${pc.comentarios}</td>
+			<td>${pedido.comentarios}</td>
+			<td> Componentes: ${pedido.pc.listaComponentes}</td>
 		</tr>
 	</table>
 
-Cliente: ${cliente}
-</br>
-Pc: ${pc}
+
 
 </body>
 </html>
