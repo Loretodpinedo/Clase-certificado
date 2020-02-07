@@ -1,24 +1,43 @@
 package curso.modelo.entidad;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
+@Entity
+@Table(name= "usuarios")
 @Component
-@RequestScope
+@Scope("prototype")
 public class Usuario {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String nombre;
 	private String contraseña;
 	private String email;
 	private String telefono;
 	
+		
 	@Override
 	public String toString() {
-		return "Usuario [nombre=" + nombre + ", contraseña=" + contraseña + ", email=" + email + ", telefono="
-				+ telefono + "]";
+		return "Usuario [id=" + id + ", nombre=" + nombre + ", contraseña=" + contraseña + ", email=" + email
+				+ ", telefono=" + telefono + "]";
 	}
 	
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -44,11 +63,4 @@ public class Usuario {
 		this.telefono = telefono;
 	}
 	
-	
-	
-	
-	
-	
-	
-
 }

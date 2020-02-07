@@ -13,13 +13,11 @@
 			<i>Bienvenides a nuestro hotel</i>
 		</h1>
 
-
+<h2 style="color:#027647">${param.error}</h2>
 <form action="inicio">
 
-		<font color="#027647" size="5"> Usuario:</font><input type="text" name="usuario" placeholder="Inserte su usuario"
-			required="required"> 
-		<font color="#027647" size="5">Password:</font> <input type="password"
-			name="contraseña" placeholder="Inserte su paswword" />
+		<font color="#027647" size="5"> Usuario:</font><input type="text" name="usuario" placeholder="Inserte su usuario"> 
+		<font color="#027647" size="5">Password:</font> <input type="password" name="contraseña" placeholder="Inserte su paswword" />
 			
 			<input type="submit" value="Enviar" style="color: #027647; text-align: center"> 
 			<a href="registrarse">¿No estas registrado?</a>

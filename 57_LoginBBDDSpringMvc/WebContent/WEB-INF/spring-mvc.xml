@@ -9,7 +9,7 @@
 
 	<!-- Esto es para que spring busque las anotaciones @Component y sus hijas, 
 		podríamos poner más ubicaciones para que busque -->
-	<context:component-scan base-package="curso" />
+	<context:component-scan base-package="curso,config" />
 
 
 	<!-- Esto es para que, ADEMAS, busque anotaciones de spring mvc -->
