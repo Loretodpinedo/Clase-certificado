@@ -9,7 +9,8 @@
 
 	<!-- Esto es para que spring busque las anotaciones @Component y sus hijas, 
 		podríamos poner más ubicaciones para que busque -->
-	<context:component-scan base-package="curso,config" />
+	<context:component-scan
+		base-package="curso,config" />
 
 
 	<!-- Esto es para que, ADEMAS, busque anotaciones de spring mvc -->
@@ -26,5 +27,8 @@
 		<property name="prefix" value="/WEB-INF/vistas/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+
+	<mvc:resources location="/recursos/"
+		mapping="/recursos/**"></mvc:resources>
 
 </beans>

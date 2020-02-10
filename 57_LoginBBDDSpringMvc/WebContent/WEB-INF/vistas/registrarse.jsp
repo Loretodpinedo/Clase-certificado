@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Registrate</title>
 </head>
-<body>
+<body background="${pageContext.request.contextPath}/recursos/sandia.jpg">
 
 	<h1
 		style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">
