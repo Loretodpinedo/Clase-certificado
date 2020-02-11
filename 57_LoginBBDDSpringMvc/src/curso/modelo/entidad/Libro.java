@@ -24,7 +24,7 @@ public class Libro {
 	private String titulo;
 	private String autor;
 	private String editorial;
-	private String sinopsis;
+
 	
 	
 	
@@ -33,7 +33,7 @@ public class Libro {
 	@Override
 	public String toString() {
 		return "Libro [id=" + id + ", añioPublicacion=" + añioPublicacion + ", titulo=" + titulo + ", autor=" + autor
-				+ ", editorial=" + editorial + ", sinopsis=" + sinopsis + "]";
+				+ ", editorial=" + editorial + ", sinopsis="  + "]";
 	}
 	
 	
@@ -67,13 +67,7 @@ public class Libro {
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
-	public String getSinopsis() {
-		return sinopsis;
-	}
-	public void setSinopsis(String sinopsis) {
-		this.sinopsis = sinopsis;
-	}
-	
+		
 	
 
 }

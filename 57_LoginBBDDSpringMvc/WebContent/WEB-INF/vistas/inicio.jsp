@@ -48,7 +48,7 @@ a:active {
 			style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">¿Que
 			quieres hacer ahora?</h1>
 
-		<a href="doAlta">Dar de alta un libro</a> <a href="listado">Ver el
+		<a href="alta">Dar de alta un libro</a> <a href="listado">Ver el
 			listado de libros</a>
 	</div>
 </body>
