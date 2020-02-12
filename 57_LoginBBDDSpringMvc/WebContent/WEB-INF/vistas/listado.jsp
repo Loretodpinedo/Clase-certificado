@@ -8,20 +8,20 @@
 <title>Listado de libros</title>
 <style type="text/css">
 th {
-	color: #027647;
+	color: #024b2e;
 	font-family: Bodoni MT Condensed;
 	font-size: 40px
 }
 
 td {
-	color: #027647;
+	color: #024b2e;
 	font-family: Bodoni MT Condensed;
 	font-size: 30px
 }
 
 /* unvisited link */
 a:link {
-	color: #027647;
+	color: #024b2e;
 	font-size: 30px;
 }
 
@@ -45,7 +45,7 @@ a:active {
 </style>
 </head>
 <body
-	background="${pageContext.request.contextPath}/recursos/sandia.jpg">
+	background="${pageContext.request.contextPath}/recursos/libro2.jpg">
 
 	<table style="margin-left: auto; margin-right: auto;" border="1">
 		<tr>
@@ -60,10 +60,16 @@ a:active {
 				<td>${libro.titulo}</td>
 				<td>${libro.autor}</td>
 				<td>${libro.editorial}</td>
+				<td><a href="detallePorLibro?titulo=${libro.titulo}">Pincha
+						para ver detalles del libro</a></td>
 			</tr>
 		</c:forEach>
 
 	</table>
-
+	<br/>
+<form action="alta" style="text-align: center;">
+	<input type="submit" value="volver a dar de alta una pelicula"
+		style="color: #024b2e; text-align: center">
+		</form>
 </body>
 </html>

@@ -8,44 +8,44 @@
 <style>
 /* unvisited link */
 a:link {
-	color: #027647;
+	color:  #024b2e ;
 	font-size: 30px;
 }
 
 /* visited link */
 a:visited {
-	color: #027646;
+	color:  #024b2e ;
 	font-size: 30px;
 }
 
 /* mouse over link */
 a:hover {
-	color: #027648;
+	color:  #024b2e ;
 	font-size: 30px;
 }
 
 /* selected link */
 a:active {
-	color: #0276476;
+	color:  #024b2e ;
 	font-size: 30px;
 }
 </style>
 
 </head>
 <body
-	background="${pageContext.request.contextPath}/recursos/sandia.jpg">
+	background="${pageContext.request.contextPath}/recursos/libro2.jpg">
 	<div style="Text-align: center">
 		<h1
-			style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">Bienvenide
+			style="color:  #024b2e ; font-family: Bodoni MT Condensed; font-size: 80px">Bienvenide
 		</h1>
 		<h1
-			style="color: #027647; font-family: Bodoni MT Condensed; font-size: 70px">${param.nombre}</h1>
+			style="color:  #024b2e ; font-family: Bodoni MT Condensed; font-size: 70px">${param.nombre}</h1>
 		<h1
-			style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">Ya
+			style="color:  #024b2e ; font-family: Bodoni MT Condensed; font-size: 80px">Ya
 			estas registrado</h1>
 
 		<h1
-			style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">¿Que
+			style="color:  #024b2e ; font-family: Bodoni MT Condensed; font-size: 80px">¿Que
 			quieres hacer ahora?</h1>
 
 		<a href="alta">Dar de alta un libro</a> <a href="listado">Ver el

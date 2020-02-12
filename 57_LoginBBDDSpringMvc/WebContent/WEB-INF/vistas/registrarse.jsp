@@ -7,21 +7,21 @@
 <title>Registrate</title>
 </head>
 <body
-	background="${pageContext.request.contextPath}/recursos/sandia.jpg">
+	background="${pageContext.request.contextPath}/recursos/libro2.jpg">
 
 	<h1
-		style="color: #027647; font-family: Bodoni MT Condensed; font-size: 80px">
+		style="color:  #024b2e ; font-family: Bodoni MT Condensed; font-size: 80px">
 		<i>Registrate</i>
 	</h1>
 
 	<form action="doRegistro">
-		<font color="#027647" size="5">Usuario:</font><input type="text"
+		<font color=" #024b2e " size="5">Usuario:</font><input type="text"
 			name="usuario" placeholder="Inserte el nombre de usuario" /> <br />
-		<font color="#027647" size="5"> Password:</font><input type="password"
+		<font color=" #024b2e " size="5"> Password:</font><input type="password"
 			name="password" placeholder="Inserte la contraseña" /> <br /> <font
-			color="#027647" size="5"> Email:</font><input type="text"
+			color=" #024b2e " size="5"> Email:</font><input type="text"
 			name="email" placeholder="Inserte su email" /> <br /> <font
-			color="#027647" size="5"> Introduzca su telefono:</font><input
+			color=" #024b2e " size="5"> Introduzca su telefono:</font><input
 			type="text" name="telefono" placeholder="Inserte su telefono" />
 		<br /> <input type="submit" value="Enviar">
 	</form>

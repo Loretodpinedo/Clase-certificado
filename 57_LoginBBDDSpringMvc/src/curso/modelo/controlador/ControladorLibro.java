@@ -53,9 +53,11 @@ public class ControladorLibro {
 	}
 	@RequestMapping("detallePorLibro")
 	
-	public ModelAndView detalleDeLibro(ModelAndView mav) {
+	public ModelAndView detalleDeLibro(@RequestParam("titulo") String titulo, ModelAndView mav) {
+		Libro lib = gl.detalle(titulo);
+
 		
-		
+		mav.addObject("libro", lib);
 		mav.setViewName("detalle");
 		return mav;
 	}
