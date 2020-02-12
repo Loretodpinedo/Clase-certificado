@@ -34,13 +34,13 @@ h3 {
 
 	<br />
 	<form action="alta" style="text-align: center;">
-	<input type="submit" value="volver a dar de alta una pelicula"
-		style="color: #024b2e; text-align: center">
-		</form>
-		<form action="listado" style="text-align: center;">
-	<input type="submit" value="volver al listado"
-		style="color: #024b2e; text-align: center">
-		</form>
+		<input type="submit" value="volver a dar de alta una pelicula"
+			style="color: #024b2e; text-align: center">
+	</form>
+	<form action="listado" style="text-align: center;">
+		<input type="submit" value="volver al listado"
+			style="color: #024b2e; text-align: center">
+	</form>
 
 </body>
 </html>

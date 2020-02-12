@@ -66,10 +66,10 @@ a:active {
 		</c:forEach>
 
 	</table>
-	<br/>
-<form action="alta" style="text-align: center;">
-	<input type="submit" value="volver a dar de alta una pelicula"
-		style="color: #024b2e; text-align: center">
-		</form>
+	<br />
+	<form action="alta" style="text-align: center;">
+		<input type="submit" value="volver a dar de alta una pelicula"
+			style="color: #024b2e; text-align: center">
+	</form>
 </body>
 </html>
