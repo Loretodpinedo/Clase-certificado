@@ -12849,3 +12849,9 @@ Caused by: java.lang.ClassNotFoundException: com.thoughtworks.xstream.security.T
 2020-02-14 13:54:27,035 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-02-14 13:54:27,035 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-02-14 13:54:27,035 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-14 13:54:27,035 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\aula2m\Desktop\Loreto\Clase-certificado\59_SpringBootWebCalculadora\src\test\resources
+2020-02-14 13:55:02,554 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-14 13:55:02,554 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-14 13:55:02,554 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-14 13:55:02,561 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-14 13:55:02,561 [Worker-134: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\aula2m\Desktop\Loreto\Clase-certificado\59_SpringBootWebCalculadora\src\test\resources
