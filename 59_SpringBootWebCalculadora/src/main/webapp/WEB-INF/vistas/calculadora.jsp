@@ -34,11 +34,10 @@
 </c:if>
 
 <a href="doTabla">Ver todas las operaciones</a>
-<c:if href="doTabla"> 
+<!--<c:if href="doTabla"> 
 <hr>
 <h3>${}</h3>
 </c:if>
-
-
+-->
 </body>
 </html>
