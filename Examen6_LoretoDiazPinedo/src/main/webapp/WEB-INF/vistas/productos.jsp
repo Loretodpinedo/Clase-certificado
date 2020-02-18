@@ -31,6 +31,7 @@ text-align: center;
 	<h2>Da de alta tu producto</h2>
 
 	<form action="doAlta">
+	
 		<font>Categoria:</font><input type="text" name="categoria"
 			placeholder="categoria producto"> ${param.errorCategoria}<br />
 		<font>Nombre:</font><input type="text" name="nombre"
@@ -38,7 +39,9 @@ text-align: center;
 			type="number" name="precio" placeholder="precio producto">
 		${param.errorPrecio}<br /> <input type="submit" value="Dar de alta">
 	</form>
+	${param.mensaje}
 	<br />
+	
 
 	<table border="1">
 		<tr>

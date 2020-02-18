@@ -21,6 +21,7 @@ public class controladorProducto {
 	@RequestMapping("productos")
 
 	public ModelAndView paginaAlta(ModelAndView mav) {
+		
 		List<Producto> lista = gp.listar();
 
 		mav.addObject("lista", lista);
@@ -58,7 +59,7 @@ public class controladorProducto {
 
 			mav.getModelMap().addAttribute("errorPrecio", "Falta el precio");
 			error = true;
-		}
+		} 
 		if (error) {
 
 			return mav;
