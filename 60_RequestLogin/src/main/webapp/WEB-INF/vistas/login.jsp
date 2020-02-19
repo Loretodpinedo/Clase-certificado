@@ -5,6 +5,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>login</title>
+<style type="text/css">
+form{
+color: #024b2e;
+font-family: Bodoni MT Condensed;
+font-size: 30px;
+align-content: center;
+}
+
+</style>
 </head>
 <body>
 
@@ -13,15 +22,12 @@
 		<i>Bienvenides</i>
 	</h1>
 
-	<form action="login">
+	<form action="doLogin">
 
-		<font color=" #024b2e " size="5"> Usuario:</font><input type="text"
-			name="nombre" placeholder="Inserte su usuario"> <font
-			color=" #024b2e " size="5">Password:</font> <input type="pass"
-			name="password" placeholder="Inserte su paswword" /> <input
-			type="submit" value="logarse"
-			style="color: #024b2e; text-align: center">
-			
+			Usuario:<input type="text" name="nombre" placeholder="Inserte su usuario"> 
+			Password:<input type="password" name="pass" placeholder="Inserte su paswword" /> 
+			<input style="color: #024b2e; text-align: center" type="submit" value="logarse">
+						
 	</form>
 
 

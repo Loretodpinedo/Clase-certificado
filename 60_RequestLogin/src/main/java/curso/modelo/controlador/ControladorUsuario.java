@@ -21,27 +21,12 @@ public class ControladorUsuario {
 	private GestorUsuario gu;
 	
 	
+		
 	@RequestMapping("doLogin")
-	
-	public ModelAndView login(@RequestParam ("nombre") String  nombre, @RequestParam ("pas") String pass, ModelAndView mav) {
+	public ModelAndView paginaLogin(@RequestParam ("nombre")String nombre, 
+			@RequestParam ("pass") String pass,
+			ModelAndView mav) {
 		
-		Usuario us = new Usuario();
-		
-		us.setNombreU(nombre);
-		us.setPass(pass);
-		
-		gu.alta(us);
-		
-		mav.addObject(us);
-		mav.addObject("hecho", "Usuario dado de alta");
-		mav.setViewName("redirect:login");
-		
-		return mav;
-	}
-
-	
-	@RequestMapping("login")
-	public ModelAndView paginaLogin(@RequestParam ("nombre")String nombre, @RequestParam ("pass") String pass, @RequestParam ModelAndView mav) {
 		
 		us.setNombreU(nombre);
 		us.setPass(pass);
@@ -49,8 +34,8 @@ public class ControladorUsuario {
 		boolean registrado = gu.registrado(us);
 		
 		if (registrado) {
-			
-			mav.setViewName("redirect:inicio");	
+			us.setRegistrado(true);
+			mav.setViewName("redirect:listaProducto");	
 		}else {
 			
 			mav.setViewName("redirect:login");
@@ -59,11 +44,11 @@ public class ControladorUsuario {
 		return mav;
 	}
 	
-	
-	@RequestMapping("inicio")
+
+	@RequestMapping("login")
 		public String paginaDeInicio() {
 		
-		return "inicio";
+		return "login";
 	}
 	
 	@RequestMapping("compra")

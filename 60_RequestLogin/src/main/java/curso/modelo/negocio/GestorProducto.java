@@ -17,5 +17,13 @@ public class GestorProducto {
 	public List<Producto> listar() {
 		return prDao.findAll();
 	}
+	
+	public Producto buscarPorId(int id) {
+		
+		return prDao.findById(id);
+		
+	}
+	
+
 
 }
