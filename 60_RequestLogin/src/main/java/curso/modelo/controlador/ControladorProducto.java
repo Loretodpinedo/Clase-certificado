@@ -1,5 +1,6 @@
 package curso.modelo.controlador;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,12 @@ public class ControladorProducto {
 
 	@Autowired
 	Usuario us;
-
-	// @Autowired
-	// Producto pr;
+	
+	//Se puede hacer con Model, no pasa la vista, solo el objeto de modelo donde podemos guardar los objetos
+		//que queremos pasar a la lista. Ver ejercicio de Felix.
 
 	@RequestMapping("listaProducto")
-	public ModelAndView paginaAlta(ModelAndView mav) {
+		public ModelAndView paginaAlta(ModelAndView mav) {
 
 		if (us.isRegistrado()) {
 			List<Producto> lista = gp.listar();
@@ -41,17 +42,17 @@ public class ControladorProducto {
 
 	@RequestMapping("doPedido")
 
-	public ModelAndView listaPedido(@RequestParam(required = false) Integer id,
-			@RequestParam(required = false) List<Producto> listaPedido, ModelAndView mav) {
-
+	public ModelAndView listaPedido(@RequestParam(required = false) Integer id, ModelAndView mav) {
+		
+		//List<Producto> listaPedido = new ArrayList<Producto>();
 		Producto pr = gp.buscarPorId(id);
 
-		listaPedido.add(pr);
+		us.getListaPedido().add(pr);
 
-		mav.getModelMap().addAttribute("nombre", pr.getNombre());
-		mav.getModelMap().addAttribute("precio", pr.getPrecio());
-		mav.addObject("listaPedido", listaPedido);
-		mav.setViewName("inicio");
+		//mav.getModelMap().addAttribute("nombre", pr.getNombre());
+		//mav.getModelMap().addAttribute("precio", pr.getPrecio());
+		mav.addObject("listaPedido", us);
+		mav.setViewName("redirect:inicio");
 
 		return mav;
 	}

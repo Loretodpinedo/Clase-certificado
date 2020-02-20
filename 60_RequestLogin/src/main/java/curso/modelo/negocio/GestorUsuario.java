@@ -18,7 +18,9 @@ public class GestorUsuario {
 
 		// Cuidado con el orden!!!!!! han de coincicidir
 
-		if (usDao.findByNombreUAndPass(us.getNombreU(), us.getPass()) == null) {
+		if (usDao.findByNombreUAndPass(
+				us.getNombreU(),
+				us.getPass()) == null) {
 
 			return false;
 		} else {

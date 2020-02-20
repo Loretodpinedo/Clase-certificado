@@ -35,6 +35,7 @@ public class ControladorUsuario {
 		
 		if (registrado) {
 			us.setRegistrado(true);
+			//redirect siempre busca un controlador @RequestMapping
 			mav.setViewName("redirect:listaProducto");	
 		}else {
 			

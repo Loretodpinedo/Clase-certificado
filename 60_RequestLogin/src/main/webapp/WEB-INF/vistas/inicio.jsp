@@ -15,7 +15,7 @@ table {
 }
 </style>
 </head>
-<body>
+<body background="images/muro.jpg">
 
 	<form action="doPedido">
 		<h3

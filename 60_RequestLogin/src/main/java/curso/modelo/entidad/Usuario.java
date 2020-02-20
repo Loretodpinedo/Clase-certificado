@@ -1,5 +1,6 @@
 package curso.modelo.entidad;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -30,7 +31,7 @@ public class Usuario {
 	
 	//Con esta anotacion no creara este atributo a la hora de crear la base de datos. 
 	@Transient
-	private List<Producto>listaPedido;
+	private List<Producto>listaPedido = new ArrayList<Producto>();
 	
 	@Override
 	public String toString() {
